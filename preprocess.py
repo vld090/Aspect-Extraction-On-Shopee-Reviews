@@ -11,11 +11,6 @@ def remove_repetitive_symbols(text):
 def bpe_tokenization (text):
     return tokenizer.tokenize(text)
 
-def process_data (text):
-    cleaned = remove_repetitive_symbols(text)
-    tokens = bpe_tokenization(cleaned)
-    return tokens
-
 # Test
 # if __name__ == "__main__":
 #     sample = 'goo very light lang..... ganda naman pero mas maganda ako!!!! hahahahahabababababababababababahahahahahahahahaha'
