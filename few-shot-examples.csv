@@ -1,0 +1,1373 @@
+Review #,Review,Token,BIO Tag (For Explicit Aspects),Aspect Tag (For Explicit Aspects),Final Tag (For Explicit Aspects),"General Aspect, Specific Aspect Category (For Explicit Aspects)",Aspect Tag (For Implicit Aspects),Final Tag (For Implicit Aspects),"General Aspect, Specific Aspect Category (For Implicit Aspects)"
+1,grabi pangalawa ko ng order sa shapee pero puro dismayado ako ang pangit ng tila subrang nipis mabilis ma punit at ang laki ng size niya alam niyo shopee mapapamura ako sa kagaguhan niyo nag speak ako na magan ang item niyo tapos ito mali pa ang pag butas,▁grab,O,,O - ,,,,
+1,,i,O,,O - ,,,,
+1,,▁panga,O,,O - ,,,,
+1,,la,O,,O - ,,,,
+1,,wa,O,,O - ,,,,
+1,,▁ko,O,,O - ,,,,
+1,,▁ng,O,,O - ,,,,
+1,,▁order,O,,O - ,,,,
+1,,▁sa,O,,O - ,,,,
+1,,▁shape,O,,O - ,,,,
+1,,e,O,,O - ,,,,
+1,,▁pero,O,,O - ,,,,
+1,,▁puro,O,,O - ,,,,
+1,,▁dis,O,,O - ,,,,
+1,,maya,O,,O - ,,,,
+1,,do,O,,O - ,,,,
+1,,▁ako,O,,O - ,,,,
+1,,▁ang,O,,O - ,,,,
+1,,▁pang,B,PRO#MAT,B - PRO#MAT,"Product, Material",,,
+1,,it,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,▁ng,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,▁til,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,a,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,▁sub,B,PRO#MAT,B - PRO#MAT,"Product, Material",,,
+1,,rang,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,▁ni,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,pis,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+1,,▁mabilis,B,PRO#DUR,B - PRO#DUR,"Product, Durability",,,
+1,,▁ma,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+1,,▁pun,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+1,,it,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+1,,▁at,O,,O - ,,,,
+1,,▁ang,O,,O - ,,,,
+1,,▁laki,B,PRO#SIZE,B - PRO#SIZE,"Product, Size / Measurement",,,
+1,,▁ng,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+1,,▁size,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+1,,▁niya,O,,O - ,,,,
+1,,▁alam,O,,O - ,,,,
+1,,▁niyo,O,,O - ,,,,
+1,,▁shop,O,,O - ,,,,
+1,,ee,O,,O - ,,,,
+1,,▁ma,O,,O - ,,,,
+1,,papa,O,,O - ,,,,
+1,,mura,O,,O - ,,,,
+1,,▁ako,O,,O - ,,,,
+1,,▁sa,O,,O - ,,,,
+1,,▁kaga,O,,O - ,,,,
+1,,gu,O,,O - ,,,,
+1,,han,O,,O - ,,,,
+1,,▁niyo,O,,O - ,,,,
+1,,▁nag,O,,O - ,,,,
+1,,▁speak,O,,O - ,,,,
+1,,▁ako,O,,O - ,,,,
+1,,▁na,O,,O - ,,,,
+1,,▁,O,,O - ,,,,
+1,,magan,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+1,,▁ang,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+1,,▁item,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+1,,▁niyo,O,,O - ,,,,
+1,,▁tapos,O,,O - ,,,,
+1,,▁ito,O,,O - ,,,,
+1,,▁mali,B,PRO#CORR,B - PRO#CORR,"Product, Correctness",,,
+1,,▁pa,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+1,,▁ang,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+1,,▁pag,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+1,,▁but,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+1,,as,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+2,walang silbing product bwesit. di gumagana dalawa pa,▁walang,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+2,,▁sil,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+2,,bing,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+2,,▁product,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+2,,▁bw,O,,O - ,,,,
+2,,es,O,,O - ,,,,
+2,,it,O,,O - ,,,,
+2,,.,O,,O - ,,,,
+2,,▁di,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+2,,▁guma,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+2,,gana,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+2,,▁dalawa,O,,O - ,,,,
+2,,▁pa,O,,O - ,,,,
+3,"d po maganda naman po yung neck fan, pero po napaka tagal po sya dumating dec,9 po dec, 23 napo sya dumating, chaka po pink po inorder ko bakit po white yung dumating pero konti lang po yung hangin thank you po driver at seller",▁d,O,,O - ,,,,
+3,,▁po,O,,O - ,,,,
+3,,▁maganda,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+3,,▁naman,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,▁po,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,▁yung,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,▁ne,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,ck,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,▁fan,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+3,,▁pero,O,,O - ,,,,
+3,,▁po,O,,O - ,,,,
+3,,▁napaka,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁ta,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,gal,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁po,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁sya,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁dumating,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁dec,O,,O - ,,,,
+3,,9,O,,O - ,,,,
+3,,▁po,O,,O - ,,,,
+3,,▁dec,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁23,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁na,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,po,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁sya,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁dumating,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+3,,▁cha,O,,O - ,,,,
+3,,ka,O,,O - ,,,,
+3,,▁po,O,,O - ,,,,
+3,,▁pink,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁po,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁in,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,order,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁ko,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁bakit,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁po,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁white,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁dumating,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+3,,▁pero,O,,O - ,,,,
+3,,▁kon,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,ti,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,▁lang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,▁po,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,▁yung,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,▁hang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,in,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,,▁thank,O,,O - ,,,,
+3,,▁you,O,,O - ,,,,
+3,,▁po,O,,O - ,,,,
+3,,▁driver,O,,O - ,,,,
+3,,▁at,O,,O - ,,,,
+3,,▁selle,O,,O - ,,,,
+3,,r,O,,O - ,,,,
+4,"0/10 sa effectiveness po nya 0/10 dahil kakalagay ko lang then wala man lang ilang kalahating minuto uminom lang ako wala na agad ung kulay sa lips ko. kala ko nag sstay sya ng matagal kahit nga punasan mo pa ng wipes, pero hindi man pla scam lang po.",▁0,B,PRO#EFF,B - PRO#EFF,"Product, Effectiveness",,,
+4,,/10,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁sa,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁effective,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,ness,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁po,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁nya,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁0,O,,O - ,,,,
+4,,/10,O,,O - ,,,,
+4,,▁dahil,O,,O - ,,,,
+4,,▁kaka,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,lagay,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁ko,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁lang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁then,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁wala,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁man,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁lang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁ilang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁kalah,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,ating,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁minuto,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁uminom,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁lang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁ako,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁wala,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁na,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁agad,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁ung,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁kulay,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁sa,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁lips,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+4,,▁ko,O,,O - ,,,,
+4,,.,O,,O - ,,,,
+4,,▁kala,B,PRO#EFF,B - PRO#EFF,"Product, Effectiveness",,,
+4,,▁ko,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁nag,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁s,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,sta,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,y,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁sya,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁ng,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁matagal,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁kahit,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁nga,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁pun,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,asan,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁mo,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁pa,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁ng,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁wi,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,pes,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁pero,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁hindi,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁man,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁pla,I,PRO#EFF,I - PRO#EFF,"Product, Effectiveness",,,
+4,,▁scam,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+4,,▁lang,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+4,,▁po,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+4,,.,O,,O - ,,,,
+5,"maganda dn same sa picture maganda sya ,medyo maliit nga lang sya",▁maganda,O,,O - ,,,,
+5,,▁d,O,,O - ,,,,
+5,,n,O,,O - ,,,,
+5,,▁same,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+5,,▁sa,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+5,,▁picture,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+5,,▁maganda,O,,O - ,,,,
+5,,▁sya,O,,O - ,,,,
+5,,▁,O,,O - ,,,,
+5,,med,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,,yo,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,,▁maliit,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,,▁nga,O,,O - ,,,,
+5,,▁lang,O,,O - ,,,,
+5,,▁sya,O,,O - ,,,,
+6,not worth it ang bilis n'ya ma-lowbat and ang tagal n'ya pang i-charge,▁not,B,PRI#VOM,B - PRI#VOM,"Price, Value for Money",,,
+6,,▁worth,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+6,,▁it,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+6,,▁ang,O,,O - ,,,,
+6,,▁bili,B,PRO#DUR,B - PRO#DUR,"Product, Durability",,,
+6,,s,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,▁n,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,"""""",I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,ya,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,▁ma,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,-,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,low,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,bat,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+6,,▁and,O,,O - ,,,,
+6,,▁ang,O,,O - ,,,,
+6,,▁ta,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+6,,gal,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,▁n,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,"""""",I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,ya,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,▁pang,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,▁i,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,-,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+6,,charge,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,mahirap buksan yung payong. need mo pa itulak. sana na check man lang bago ipadala.,▁mahirap,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+7,,▁buk,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,,san,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,,▁yung,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,,▁pa,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,,yong,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+7,,.,O,,O - ,,,,
+7,,▁need,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+7,,▁mo,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+7,,▁pa,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+7,,▁itu,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+7,,lak,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+7,,.,O,,O - ,,,,
+7,,▁sana,B,SER#HAND,B - SER#HAND,"Service, Handling",,,
+7,,▁na,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,▁check,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,▁man,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,▁lang,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,▁bago,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,▁i,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,pada,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,la,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+7,,.,O,,O - ,,,,
+8,wrong color & design. sana kung di na available yung black mag message namn kayo if ano available. desisyon yarrrnnn? kakainis ganitong seller.,▁wrong,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+8,,▁color,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+8,,▁&,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+8,,▁design,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+8,,.,O,,O - ,,,,
+8,,▁sana,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁kung,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁di,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁na,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁available,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁yung,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁black,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁mag,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁message,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁namn,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁kayo,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁if,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁ano,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,▁available,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+8,,.,O,,O - ,,,,
+8,,▁des,O,,O - ,,,,
+8,,isyon,O,,O - ,,,,
+8,,▁ya,O,,O - ,,,,
+8,,rrr,O,,O - ,,,,
+8,,n,O,,O - ,,,,
+8,,nn,O,,O - ,,,,
+8,,?,O,,O - ,,,,
+8,,▁kaka,O,,O - ,,,,
+8,,inis,O,,O - ,,,,
+8,,▁,O,,O - ,,,,
+8,,ganitong,O,,O - ,,,,
+8,,▁selle,O,,O - ,,,,
+8,,r,O,,O - ,,,,
+8,,.,O,,O - ,,,,
+9,"ayaw gumana ng remote control, my dent ung product na pinadala ni seller, sana bago ipa ship check muna mabuti ni seller ung item na ipapadala para hnd nakaka disappoint sa client pag na recieve ung item",▁ayaw,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+9,,▁guman,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+9,,a,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+9,,▁ng,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+9,,▁remote,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+9,,▁control,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+9,,▁my,B,PRO#COND,B - PRO#COND,"Product, Condition",,,
+9,,▁den,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+9,,t,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+9,,▁ung,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+9,,▁product,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+9,,▁na,O,,O - ,,,,
+9,,▁pina,O,,O - ,,,,
+9,,dala,O,,O - ,,,,
+9,,▁ni,O,,O - ,,,,
+9,,▁selle,O,,O - ,,,,
+9,,r,O,,O - ,,,,
+9,,▁sana,B,SER#HAND,B - SER#HAND,"Service, Handling",,,
+9,,▁bago,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁i,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,pa,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁ship,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁check,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁muna,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁mabuti,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁ni,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁selle,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,r,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁ung,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁item,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+9,,▁na,O,,O - ,,,,
+9,,▁i,O,,O - ,,,,
+9,,papa,O,,O - ,,,,
+9,,dala,O,,O - ,,,,
+9,,▁para,O,,O - ,,,,
+9,,▁h,O,,O - ,,,,
+9,,nd,O,,O - ,,,,
+9,,▁nakaka,O,,O - ,,,,
+9,,▁dis,O,,O - ,,,,
+9,,appoint,O,,O - ,,,,
+9,,▁sa,O,,O - ,,,,
+9,,▁client,O,,O - ,,,,
+9,,▁pag,O,,O - ,,,,
+9,,▁na,O,,O - ,,,,
+9,,▁reci,O,,O - ,,,,
+9,,eve,O,,O - ,,,,
+9,,▁ung,O,,O - ,,,,
+9,,▁item,O,,O - ,,,,
+10,excited ako sa order ko kasi matagal ko na gusto bumili ng mga mystery item. so dahil 6.6 we've decided to order 5 mystery pouch. expect ko 5 packs ang makukuha ko. akala ko may sari sariling balot. yun pala 5 products na sya sa iisang pouch,▁excited,O,,O - ,,,,
+10,,▁ako,O,,O - ,,,,
+10,,▁sa,O,,O - ,,,,
+10,,▁order,O,,O - ,,,,
+10,,▁ko,O,,O - ,,,,
+10,,▁kasi,O,,O - ,,,,
+10,,▁matagal,O,,O - ,,,,
+10,,▁ko,O,,O - ,,,,
+10,,▁na,O,,O - ,,,,
+10,,▁gusto,O,,O - ,,,,
+10,,▁bumili,O,,O - ,,,,
+10,,▁ng,O,,O - ,,,,
+10,,▁mga,O,,O - ,,,,
+10,,▁mystery,O,,O - ,,,,
+10,,▁item,O,,O - ,,,,
+10,,.,O,,O - ,,,,
+10,,▁so,O,,O - ,,,,
+10,,▁dahil,O,,O - ,,,,
+10,,▁,O,,O - ,,,,
+10,,6.6,O,,O - ,,,,
+10,,▁we,O,,O - ,,,,
+10,,"""""",O,,O - ,,,,
+10,,ve,O,,O - ,,,,
+10,,▁decided,O,,O - ,,,,
+10,,▁to,O,,O - ,,,,
+10,,▁order,O,,O - ,,,,
+10,,▁5,O,,O - ,,,,
+10,,▁mystery,O,,O - ,,,,
+10,,▁po,O,,O - ,,,,
+10,,uch,O,,O - ,,,,
+10,,.,O,,O - ,,,,
+10,,▁expect,O,,O - ,,,,
+10,,▁ko,O,,O - ,,,,
+10,,▁5,O,,O - ,,,,
+10,,▁pack,O,,O - ,,,,
+10,,s,O,,O - ,,,,
+10,,▁ang,O,,O - ,,,,
+10,,▁maku,O,,O - ,,,,
+10,,kuha,O,,O - ,,,,
+10,,▁ko,O,,O - ,,,,
+10,,.,O,,O - ,,,,
+10,,▁a,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,kala,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁ko,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁may,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁sari,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁sariling,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁balo,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,t,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,.,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁yun,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁pala,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁5,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁products,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁na,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁sya,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁sa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁i,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,is,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,ang,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,▁po,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+10,,uch,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,wrong color po yung dumating tapos yung green natanggal yung cover niya,▁wrong,B,DEL#CORR,B - DEL#CORR,"Delivery, Correctness",,,
+11,,▁color,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+11,,▁po,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+11,,▁yung,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+11,,▁dumating,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+11,,▁tapos,O,,O - ,,,,
+11,,▁yung,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,▁green,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,▁na,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,tanggal,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,▁yung,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,▁cover,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+11,,▁niya,O,,O - ,,,,
+12,"5/10 ang mahal ng payong, nd nmn ganun ka quality sira pa, sabi ko seller if ayaw bilik pera ko change items nd na nag reply",▁5,O,,O - ,,,,
+12,,/10,O,,O - ,,,,
+12,,▁ang,B,PRI#AFF,B - PRI#AFF,"Price, Affordability",,,
+12,,▁mahal,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+12,,▁ng,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+12,,▁pa,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+12,,yong,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+12,,▁,O,,O - ,,,,
+12,,nd,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,▁n,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,mn,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,▁ganun,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,▁ka,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,▁quality,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+12,,▁sira,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+12,,▁pa,O,,O - ,,,,
+12,,▁sabi,B,SER#RES,B - SER#RES,"Service, Responsiveness",,,
+12,,▁ko,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁selle,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,r,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁if,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁ayaw,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁bilik,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁per,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,a,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁ko,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁change,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁items,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,nd,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁na,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁nag,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+12,,▁reply,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+13,"close to ok lang i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me. the problem is i ordered it as gift for a man, so purple is not really ok! and both bottles have scratches doesnt look new for me. ",▁close,O,,O - ,,,,
+13,,▁to,O,,O - ,,,,
+13,,▁ok,O,,O - ,,,,
+13,,▁lang,O,,O - ,,,,
+13,,▁i,B,SER#TRU,B - SER#TRU,"Service, Trustworthiness",,,
+13,,▁contact,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,ed,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁the,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁selle,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,r,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁and,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁they,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁admit,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,ted,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁that,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁they,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁intention,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,a,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,ly,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁sent,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁the,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁wrong,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁color,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁without,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁inform,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,ing,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,▁me,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+13,,.,O,,O - ,,,,
+13,,▁the,O,,O - ,,,,
+13,,▁problem,O,,O - ,,,,
+13,,▁is,O,,O - ,,,,
+13,,▁i,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁order,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,ed,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁it,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁as,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁gift,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁for,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁a,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁man,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁so,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁pur,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,ple,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁is,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁not,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁really,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,▁ok,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+13,,!,O,,O - ,,,,
+13,,▁and,O,,O - ,,,,
+13,,▁both,B,PRO#COND,B - PRO#COND,"Product, Condition",,,
+13,,▁bottle,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+13,,s,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+13,,▁have,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+13,,▁scratch,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+13,,es,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+13,,▁doesn,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,t,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,▁look,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,▁new,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,▁for,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,▁me,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+13,,.,O,,O - ,,,,
+14,ang pangit ng item sorry ahhh n ung size kala mo pang bata,▁ang,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+14,,▁pang,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+14,,it,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+14,,▁ng,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+14,,▁item,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+14,,▁sorry,O,,O - ,,,,
+14,,▁a,O,,O - ,,,,
+14,,hhh,O,,O - ,,,,
+14,,▁n,O,,O - ,,,,
+14,,▁ung,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+14,,▁size,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+14,,▁kala,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+14,,▁mo,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+14,,▁pang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+14,,▁bata,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+15,"0/10 d maganda yung product matqgal matuyo, kumakalat sa mata, hindi water proof.",▁0,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+15,,/10,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+15,,▁d,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+15,,▁maganda,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+15,,▁yung,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+15,,▁product,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+15,,▁mat,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,q,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,gal,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,▁matu,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,yo,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,▁kuma,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,kala,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,t,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,▁sa,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,▁mata,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+15,,▁hindi,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+15,,▁water,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+15,,▁,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+15,,proof,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+15,,.,O,,O - ,,,,
+16,"good quality product ok naman ung order mabilis dumating, well pack din kaso orde ko lima tapos isa lang ang dumating ok lang kasi nakarefund ako try ko ulit umorder sa kanila baka kasi nalito lang si seller at magpapasko madaming order . ",▁good,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+16,,▁quality,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+16,,▁product,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+16,,▁ok,O,,O - ,,,,
+16,,▁naman,O,,O - ,,,,
+16,,▁ung,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+16,,▁order,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+16,,▁mabilis,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+16,,▁dumating,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+16,,▁well,O,,O - ,,SER#HAND,SER#HAND,"Service, Handling"
+16,,▁pack,O,,O - ,,SER#HAND,SER#HAND,"Service, Handling"
+16,,▁din,O,,O - ,,,,
+16,,▁kas,O,,O - ,,,,
+16,,o,O,,O - ,,,,
+16,,▁orde,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁ko,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁lima,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁tapos,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁isa,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁lang,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁ang,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁dumating,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+16,,▁ok,O,,O - ,,,,
+16,,▁lang,O,,O - ,,,,
+16,,▁kasi,O,,O - ,,,,
+16,,▁naka,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+16,,re,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+16,,fund,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+16,,▁ako,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+16,,▁try,O,,O - ,,,,
+16,,▁ko,O,,O - ,,,,
+16,,▁ulit,O,,O - ,,,,
+16,,▁um,O,,O - ,,,,
+16,,order,O,,O - ,,,,
+16,,▁sa,O,,O - ,,,,
+16,,▁kanila,O,,O - ,,,,
+16,,▁baka,O,,O - ,,,,
+16,,▁kasi,O,,O - ,,,,
+16,,▁na,B,SER#GEN,B - SER#GEN,"Service, General",,,
+16,,li,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,to,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,▁lang,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,▁si,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,▁selle,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,r,I,SER#GEN,I - SER#GEN,"Service, General",,,
+16,,▁at,O,,O - ,,,,
+16,,▁magpa,O,,O - ,,,,
+16,,pas,O,,O - ,,,,
+16,,ko,O,,O - ,,,,
+16,,▁mada,O,,O - ,,,,
+16,,ming,O,,O - ,,,,
+16,,▁order,O,,O - ,,,,
+16,,▁,O,,O - ,,,,
+16,,.,O,,O - ,,,,
+17,sigundo ko lng sya nagamit bago yung battery nilagay ko pero pahinto hinto syahindi na ako bibilin ng ganyan much better nag ahit nalang sana ulit ako,▁sig,B,PRO#DUR,B - PRO#DUR,"Product, Durability",,,
+17,,u,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,ndo,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,▁ko,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,▁l,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,ng,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,▁sya,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,▁na,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,ga,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,mit,I,PRO#DUR,I - PRO#DUR,"Product, Durability",,,
+17,,▁bago,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+17,,▁yung,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁battery,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁ni,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,lagay,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁ko,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁pero,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁pah,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,into,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁hin,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,to,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,▁sya,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+17,,hindi,O,,O - ,,,,
+17,,▁na,O,,O - ,,,,
+17,,▁ako,O,,O - ,,,,
+17,,▁bi,O,,O - ,,,,
+17,,bili,O,,O - ,,,,
+17,,n,O,,O - ,,,,
+17,,▁ng,O,,O - ,,,,
+17,,▁gan,O,,O - ,,,,
+17,,yan,O,,O - ,,,,
+17,,▁much,O,,O - ,,,,
+17,,▁better,O,,O - ,,,,
+17,,▁nag,O,,O - ,,,,
+17,,▁a,O,,O - ,,,,
+17,,hit,O,,O - ,,,,
+17,,▁na,O,,O - ,,,,
+17,,lang,O,,O - ,,,,
+17,,▁sana,O,,O - ,,,,
+17,,▁ulit,O,,O - ,,,,
+17,,▁ako,O,,O - ,,,,
+18,madikit naman kaso di pantay pantay yung cut di pantay pantay yung cut sa 1st 2 lines di pantay yun yung galing sa shop na to while sa 3rd lines sa ibang shopping app ko na binili di pantay pantay yung cut,▁ma,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+18,,dik,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+18,,it,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+18,,▁naman,O,,O - ,,,,
+18,,▁kas,O,,O - ,,,,
+18,,o,O,,O - ,,,,
+18,,▁di,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁panta,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,y,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁panta,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,y,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁yung,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁cut,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁di,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁panta,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,y,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁panta,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,y,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁yung,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁cut,O,,O - ,,PRO#CORR,PRO#CORR,"Product, Correctness"
+18,,▁sa,O,,O - ,,,,
+18,,▁1,O,,O - ,,,,
+18,,st,O,,O - ,,,,
+18,,▁2,O,,O - ,,,,
+18,,▁lines,O,,O - ,,,,
+18,,▁di,O,,O - ,,,,
+18,,▁panta,O,,O - ,,,,
+18,,y,O,,O - ,,,,
+18,,▁yun,O,,O - ,,,,
+18,,▁yung,O,,O - ,,,,
+18,,▁galing,O,,O - ,,,,
+18,,▁sa,O,,O - ,,,,
+18,,▁shop,O,,O - ,,,,
+18,,▁na,O,,O - ,,,,
+18,,▁to,O,,O - ,,,,
+18,,▁while,O,,O - ,,,,
+18,,▁sa,O,,O - ,,,,
+18,,▁3,O,,O - ,,,,
+18,,rd,O,,O - ,,,,
+18,,▁lines,O,,O - ,,,,
+18,,▁sa,O,,O - ,,,,
+18,,▁ibang,O,,O - ,,,,
+18,,▁shopping,O,,O - ,,,,
+18,,▁app,O,,O - ,,,,
+18,,▁ko,O,,O - ,,,,
+18,,▁na,O,,O - ,,,,
+18,,▁bin,O,,O - ,,,,
+18,,ili,O,,O - ,,,,
+18,,▁di,O,,O - ,,,,
+18,,▁panta,O,,O - ,,,,
+18,,y,O,,O - ,,,,
+18,,▁panta,O,,O - ,,,,
+18,,y,O,,O - ,,,,
+18,,▁yung,O,,O - ,,,,
+18,,▁cut,O,,O - ,,,,
+19,mali po ata yung na bigay ni seller we're expecting na ma received yung parang gradient na water bottle pero iba po yung na received namin but okay lang anjan na yan eh.,▁mali,B,SER#HAND,B - SER#HAND,"Service, Handling",,,
+19,,▁po,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁ata,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁yung,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁na,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,bigay,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁ni,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁selle,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,r,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+19,,▁we,B,DEL#CORR,B - DEL#CORR,"Delivery, Correctness",,,
+19,,"""""",I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,re,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁expect,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,ing,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁na,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁ma,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁received,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁yung,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁parang,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁gradi,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,ent,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁na,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁water,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁bottle,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁pero,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁iba,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁po,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁yung,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁na,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁received,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+19,,▁namin,O,,O - ,,,,
+19,,▁but,O,,O - ,,,,
+19,,▁okay,O,,O - ,,,,
+19,,▁lang,O,,O - ,,,,
+19,,▁an,O,,O - ,,,,
+19,,jan,O,,O - ,,,,
+19,,▁na,O,,O - ,,,,
+19,,▁yan,O,,O - ,,,,
+19,,▁eh,O,,O - ,,,,
+19,,.,O,,O - ,,,,
+20,"hindi black yung eyeliner na dumating, pwro black yakaga inorder ko.",▁hindi,B,DEL#CORR,B - DEL#CORR,"Delivery, Correctness",,,
+20,,▁black,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,▁yung,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,▁eye,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,liner,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,▁na,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,▁dumating,I,DEL#CORR,I - DEL#CORR,"Delivery, Correctness",,,
+20,,▁pw,O,,O - ,,,,
+20,,ro,O,,O - ,,,,
+20,,▁black,O,,O - ,,,,
+20,,▁yaka,O,,O - ,,,,
+20,,ga,O,,O - ,,,,
+20,,▁in,O,,O - ,,,,
+20,,order,O,,O - ,,,,
+20,,▁ko,O,,O - ,,,,
+20,,.,O,,O - ,,,,
+21,di nasunod yung ibang color na inorder ko pero oks lng good quality nmn,▁di,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁na,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,sunod,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁ibang,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁color,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁na,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁in,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,order,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁ko,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+21,,▁pero,O,,O - ,,,,
+21,,▁ok,O,,O - ,,,,
+21,,s,O,,O - ,,,,
+21,,▁l,O,,O - ,,,,
+21,,ng,O,,O - ,,,,
+21,,▁good,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+21,,▁quality,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+21,,▁n,O,,O - ,,,,
+21,,mn,O,,O - ,,,,
+22,nung pagkabukas ko package yung keyboard is nakabukaka (slightly open) kala ko sira na. fast delivery naman.,▁nung,B,PRO#COND,B - PRO#COND,"Product, Condition",,,
+22,,▁pagka,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,buka,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,s,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁ko,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁package,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁yung,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁keyboard,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁is,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁naka,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,buka,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,ka,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁(,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,s,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,light,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,ly,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁open,I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,),I,PRO#COND,I - PRO#COND,"Product, Condition",,,
+22,,▁kala,O,,O - ,,,,
+22,,▁ko,O,,O - ,,,,
+22,,▁sira,O,,O - ,,,,
+22,,▁na,O,,O - ,,,,
+22,,.,O,,O - ,,,,
+22,,▁fast,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+22,,▁delivery,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+22,,▁naman,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+22,,.,O,,O - ,,,,
+23,"ang dali ra masira oy. at first madali gamitin, ngayon ay di na nakakaputol ng hair. na s-stuck na sya. yun lang. thanks",▁ang,O,,O - ,,,,
+23,,▁dali,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+23,,▁ra,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+23,,▁mas,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+23,,ira,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+23,,▁oy,O,,O - ,,,,
+23,,.,O,,O - ,,,,
+23,,▁at,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+23,,▁first,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+23,,▁mada,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+23,,li,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+23,,▁gamitin,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+23,,▁ngayon,O,,O - ,,,,
+23,,▁ay,O,,O - ,,,,
+23,,▁di,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,▁na,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,▁nakaka,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,put,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,ol,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,▁ng,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,▁hair,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+23,,.,O,,O - ,,,,
+23,,▁na,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+23,,▁s,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,-,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,stu,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,ck,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,▁na,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,▁sya,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+23,,.,O,,O - ,,,,
+23,,▁yun,O,,O - ,,,,
+23,,▁lang,O,,O - ,,,,
+23,,.,O,,O - ,,,,
+23,,▁thanks,O,,O - ,,,,
+24,wala seller service is excellent. delivery was immidiate. the product itself is poor. very very weak airflow almost cant feel it. hindi man lang ma ihip yung buhok ng aso,▁wala,O,,O - ,,,,
+24,,▁selle,B,SER#GEN,B - SER#GEN,"Service, General",,,
+24,,r,I,SER#GEN,I - SER#GEN,"Service, General",,,
+24,,▁service,I,SER#GEN,I - SER#GEN,"Service, General",,,
+24,,▁is,I,SER#GEN,I - SER#GEN,"Service, General",,,
+24,,▁excellent,I,SER#GEN,I - SER#GEN,"Service, General",,,
+24,,.,O,,O - ,,,,
+24,,▁delivery,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+24,,▁was,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+24,,▁im,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+24,,midi,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+24,,ate,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+24,,.,O,,O - ,,,,
+24,,▁the,O,,O - ,,,,
+24,,▁product,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+24,,▁itself,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+24,,▁is,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+24,,▁poor,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+24,,.,O,,O - ,,,,
+24,,▁very,O,,O - ,,,,
+24,,▁very,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁we,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,ak,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁air,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,flow,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁almost,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁cant,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁feel,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁it,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,.,O,,O - ,,,,
+24,,▁hindi,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁man,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁lang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁ma,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁i,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,hip,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁yung,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁buhok,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁ng,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,▁as,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+24,,o,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+25,"change feedback, mag isa syang nag aactivate nang timer kagabi, parang sira",▁change,O,,O - ,,,,
+25,,▁feedback,O,,O - ,,,,
+25,,▁mag,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+25,,▁isa,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁s,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,yang,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁nag,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁a,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,activa,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,te,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁nang,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁timer,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁kaga,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,bi,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁parang,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+25,,▁sira,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+26,"dalawa yung binili ko, isa sakin tsaka sa friend ko. first of all, kaunti lang yung laman nung isa, habang medyo mas lamang yung sa isa. about sa color, maroon yung sa tingin kong dapat maging kakalabasan niya pero violet yung kulay niya kapag nilagay na sa labi. also, kulang",▁dalawa,O,,O - ,,,,
+26,,▁yung,O,,O - ,,,,
+26,,▁bin,O,,O - ,,,,
+26,,ili,O,,O - ,,,,
+26,,▁ko,O,,O - ,,,,
+26,,▁isa,O,,O - ,,,,
+26,,▁sakin,O,,O - ,,,,
+26,,▁,O,,O - ,,,,
+26,,tsaka,O,,O - ,,,,
+26,,▁sa,O,,O - ,,,,
+26,,▁friend,O,,O - ,,,,
+26,,▁ko,O,,O - ,,,,
+26,,.,O,,O - ,,,,
+26,,▁first,O,,O - ,,,,
+26,,▁of,O,,O - ,,,,
+26,,▁all,O,,O - ,,,,
+26,,▁ka,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,unti,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁lang,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁yung,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁laman,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁nung,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁isa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁habang,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁med,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,yo,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁mas,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁lamang,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁yung,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁sa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,▁isa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+26,,.,O,,O - ,,,,
+26,,▁about,B,PRO#COL,B - PRO#COL,"Product, Color",,,
+26,,▁sa,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁color,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁maro,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,on,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁yung,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁sa,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁tingin,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁kong,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁dapat,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁maging,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁kaka,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,labas,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,an,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁niya,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁pero,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁violet,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁yung,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁kulay,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁niya,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁kapag,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁ni,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,lagay,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁na,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁sa,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,▁labi,I,PRO#COL,I - PRO#COL,"Product, Color",,,
+26,,.,O,,O - ,,,,
+26,,▁also,O,,O - ,,,,
+26,,▁ku,O,,O - ,,,,
+26,,lang,O,,O - ,,,,
+27,ok na sana pero hindi 10 meters 6 meters lang saan ang 4 meters kada isang roll magpa katotoo naman sa post niyo,▁ok,O,,O - ,,,,
+27,,▁na,O,,O - ,,,,
+27,,▁sana,O,,O - ,,,,
+27,,▁pero,O,,O - ,,,,
+27,,▁hindi,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁10,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁meter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,s,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁6,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁meter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,s,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁lang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁saan,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁ang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁4,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁meter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,s,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁kada,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁isang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁roll,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+27,,▁magpa,B,SER#TRU,B - SER#TRU,"Service, Trustworthiness",,,
+27,,▁kato,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+27,,too,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+27,,▁naman,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+27,,▁sa,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+27,,▁post,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+27,,▁niyo,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+28,amoy plastic amputa tagal ko inorder now lang dumating. amoy plastic pa huhu why,▁amo,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,y,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,▁plastic,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,▁am,O,,O - ,,,,
+28,,puta,O,,O - ,,,,
+28,,▁ta,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+28,,gal,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,▁ko,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,▁in,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,order,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,▁now,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,▁lang,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,▁dumating,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+28,,.,O,,O - ,,,,
+28,,▁amo,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,y,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,▁plastic,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+28,,▁pa,O,,O - ,,,,
+28,,▁,O,,O - ,,,,
+28,,huhu,O,,O - ,,,,
+28,,▁why,O,,O - ,,,,
+29,"not good/ not satisfied omg! sa quality nya para sakin hindi okay akala ko yung na sstrech talaga sya e hindi naman pala. sa picture at live na nagbebenta goods sya in person hindi na pala pero thats business, sobrang nanghinayang ako",▁not,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+29,,▁good,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+29,,/,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+29,,▁not,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+29,,▁satisfied,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+29,,▁om,O,,O - ,,,,
+29,,g,O,,O - ,,,,
+29,,!,O,,O - ,,,,
+29,,▁sa,O,,O - ,,,,
+29,,▁quality,B,PRO#GEN,B - PRO#GEN,"Product, General",,,
+29,,▁nya,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+29,,▁para,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+29,,▁sakin,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+29,,▁hindi,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+29,,▁okay,I,PRO#GEN,I - PRO#GEN,"Product, General",,,
+29,,▁a,B,PRO#CORR,B - PRO#CORR,"Product, Correctness",,,
+29,,kala,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁ko,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁yung,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁na,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁s,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,stre,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,ch,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁talaga,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁sya,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁e,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁hindi,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁naman,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁pala,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,.,O,,O - ,,,,
+29,,▁sa,B,PRO#CORR,B - PRO#CORR,"Product, Correctness",,,
+29,,▁picture,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁at,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁live,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁na,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁nag,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,be,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,ben,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,ta,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁good,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,s,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁sya,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁in,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁person,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁hindi,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁na,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁pala,I,PRO#CORR,I - PRO#CORR,"Product, Correctness",,,
+29,,▁pero,O,,O - ,,,,
+29,,▁that,O,,O - ,,,,
+29,,s,O,,O - ,,,,
+29,,▁business,O,,O - ,,,,
+29,,▁sobrang,O,,O - ,,,,
+29,,▁nang,O,,O - ,,,,
+29,,hina,O,,O - ,,,,
+29,,yang,O,,O - ,,,,
+29,,▁ako,O,,O - ,,,,
+30,actually kala ko 10meters pro 6meters lang ng sinukat ko,▁actually,O,,O - ,,,,
+30,,▁kala,O,,O - ,,,,
+30,,▁ko,O,,O - ,,,,
+30,,▁10,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,meter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,s,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁pro,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁6,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,meter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,s,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁lang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁ng,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁sin,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,ukat,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+30,,▁ko,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+31,subrang tagal e ship. nag order ako ng 9 9 ngayon ko palang na receive 9/24 mag 1 month bago ko marecive ang item ang pangit ng service di responsible si seller .,▁sub,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+31,,rang,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ta,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,gal,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁e,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ship,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,.,O,,O - ,,,,
+31,,▁nag,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁order,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ako,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ng,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁9,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁9,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ngayon,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ko,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁pa,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,lang,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁na,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁receive,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁9,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,/24,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁mag,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁1,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁month,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁bago,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ko,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁mare,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,ci,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,ve,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ang,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁item,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+31,,▁ang,O,,O - ,,,,
+31,,▁pang,B,SER#GEN,B - SER#GEN,"Service, General",,,
+31,,it,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁ng,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁service,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁di,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁responsible,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁si,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁selle,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,r,I,SER#GEN,I - SER#GEN,"Service, General",,,
+31,,▁,O,,O - ,,,,
+31,,.,O,,O - ,,,,
+32,oil based kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent which is not the same sa usual na binibili ko then amoy na amoy talaga yung alchohol sa bawat perfume pero i guess it’s worth the price mura lng naman kaya ok,▁oil,O,,O - ,,,,
+32,,▁based,O,,O - ,,,,
+32,,▁kad,O,,O - ,,,,
+32,,is,O,,O - ,,,,
+32,,appoint,O,,O - ,,,,
+32,,▁lang,O,,O - ,,,,
+32,,▁yung,O,,O - ,,,,
+32,,▁cloud,O,,O - ,,,,
+32,,▁,O,,O - ,,,,
+32,,ksi,O,,O - ,,,,
+32,,▁parang,O,,O - ,,,,
+32,,▁iba,B,PRO#SENS,B - PRO#SENS,"Product, Sensory",,,
+32,,▁yung,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁amo,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,y,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁anta,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,pang,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁may,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁pag,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁kala,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,la,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,ke,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁rin,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁siyang,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁scen,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,t,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁which,O,,O - ,,,,
+32,,▁is,O,,O - ,,,,
+32,,▁not,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+32,,▁the,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+32,,▁same,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+32,,▁sa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+32,,▁usual,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+32,,▁na,O,,O - ,,,,
+32,,▁bin,O,,O - ,,,,
+32,,ibili,O,,O - ,,,,
+32,,▁ko,O,,O - ,,,,
+32,,▁then,O,,O - ,,,,
+32,,▁amo,B,PRO#SENS,B - PRO#SENS,"Product, Sensory",,,
+32,,y,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁na,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁amo,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,y,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁talaga,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁yung,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁al,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,cho,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,hol,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁sa,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁bawat,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁perfume,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+32,,▁pero,O,,O - ,,,,
+32,,▁i,O,,O - ,,,,
+32,,▁guess,O,,O - ,,,,
+32,,▁it,O,,O - ,,,,
+32,,’,O,,O - ,,,,
+32,,s,O,,O - ,,,,
+32,,▁worth,B,PRI#VOM,B - PRI#VOM,"Price, Value for Money",,,
+32,,▁the,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+32,,▁price,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+32,,▁mura,B,PRI#AFF,B - PRI#AFF,"Price, Affordability",,,
+32,,▁l,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+32,,ng,I,PRI#AFF,I - PRI#AFF,"Price, Affordability",,,
+32,,▁naman,O,,O - ,,,,
+32,,▁kaya,O,,O - ,,,,
+32,,▁ok,O,,O - ,,,,
+33,"late dumating ung parcel and sira ung product,hnd gmagana,,on lng tpos wla na",▁late,B,DEL#TIME,B - DEL#TIME,"Delivery, Timeliness",,,
+33,,▁dumating,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+33,,▁ung,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+33,,▁parcel,I,DEL#TIME,I - DEL#TIME,"Delivery, Timeliness",,,
+33,,▁and,O,,O - ,,,,
+33,,▁sira,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+33,,▁ung,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁product,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,h,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,nd,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁g,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,magan,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,a,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,on,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁l,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,ng,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁t,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,pos,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁w,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,la,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+33,,▁na,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+34,i don't think nsa 10meters ito .lukot pa,▁i,B,PRO#SIZE,B - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁don,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,"""""",I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,t,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁think,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,nsa,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁10,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,meter,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,s,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁ito,I,PRO#SIZE,I - PRO#SIZE,"Product, Size / Measurement",,,
+34,,▁,O,,O - ,,,,
+34,,.,O,,O - ,,,,
+34,,luk,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+34,,ot,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+34,,▁pa,O,,O - ,,PRO#COND,PRO#COND,"Product, Condition"
+35,"hindi ko nagustuhan yung amoy. i already received my parcel pero nung pag ka open ko, may leak and hindi ko nagustuhan yung amoy, nakakasuka yung amoy. this is my first time to buy a product in this shop and i expect too much. nakakadismaya.",▁hindi,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁ko,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁nagu,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,s,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,tuhan,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁yung,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁amo,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,y,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,.,O,,O - ,,,,
+35,,▁i,O,,O - ,,,,
+35,,▁already,O,,O - ,,,,
+35,,▁received,O,,O - ,,,,
+35,,▁my,O,,O - ,,,,
+35,,▁parcel,O,,O - ,,,,
+35,,▁pero,O,,O - ,,,,
+35,,▁nung,O,,O - ,,,,
+35,,▁pag,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁ka,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁open,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁ko,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁may,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁le,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,ak,O,,O - ,,DEL#COND,DEL#COND,"Delivery, Condition"
+35,,▁and,O,,O - ,,,,
+35,,▁hindi,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁ko,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁nagu,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,s,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,tuhan,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁yung,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁amo,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,y,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁nakaka,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,suka,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁yung,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,▁amo,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,y,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+35,,.,O,,O - ,,,,
+35,,▁this,O,,O - ,,,,
+35,,▁is,O,,O - ,,,,
+35,,▁my,O,,O - ,,,,
+35,,▁first,O,,O - ,,,,
+35,,▁time,O,,O - ,,,,
+35,,▁to,O,,O - ,,,,
+35,,▁buy,O,,O - ,,,,
+35,,▁a,O,,O - ,,,,
+35,,▁product,O,,O - ,,,,
+35,,▁in,O,,O - ,,,,
+35,,▁this,O,,O - ,,,,
+35,,▁shop,O,,O - ,,,,
+35,,▁and,O,,O - ,,,,
+35,,▁i,O,,O - ,,,,
+35,,▁expect,O,,O - ,,,,
+35,,▁too,O,,O - ,,,,
+35,,▁much,O,,O - ,,,,
+35,,.,O,,O - ,,,,
+35,,▁nakaka,O,,O - ,,,,
+35,,dis,O,,O - ,,,,
+35,,maya,O,,O - ,,,,
+35,,.,O,,O - ,,,,
+36,panget dito bumili pinapalitan yong order mo talaga kainis ng shop nato masyadong scam,▁pang,B,SER#GEN,B - SER#GEN,"Service, General",,,
+36,,et,I,SER#GEN,I - SER#GEN,"Service, General",,,
+36,,▁dito,I,SER#GEN,I - SER#GEN,"Service, General",,,
+36,,▁bumili,I,SER#GEN,I - SER#GEN,"Service, General",,,
+36,,▁pinapa,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,li,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,tan,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,▁,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,yong,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,▁order,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,▁mo,O,,O - ,,SER#TRU,SER#TRU,"Service, Trustworthiness"
+36,,▁talaga,O,,O - ,,,,
+36,,▁ka,B,SER#TRU,B - SER#TRU,"Service, Trustworthiness",,,
+36,,inis,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+36,,▁ng,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+36,,▁shop,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+36,,▁nato,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+36,,▁masyadong,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+36,,▁scam,I,SER#TRU,I - SER#TRU,"Service, Trustworthiness",,,
+37,parang laruan yung glads niya. so dissapointed,▁parang,B,PRO#MAT,B - PRO#MAT,"Product, Material",,,
+37,,▁la,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,ruan,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,▁yung,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,▁glad,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,s,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,▁niya,I,PRO#MAT,I - PRO#MAT,"Product, Material",,,
+37,,.,O,,O - ,,,,
+37,,▁so,O,,O - ,,,,
+37,,▁di,O,,O - ,,,,
+37,,ssa,O,,O - ,,,,
+37,,point,O,,O - ,,,,
+37,,ed,O,,O - ,,,,
+38,"di gumagana mic, sabog pa tunog, ang sabi ko bago ko i place order ko ay ipa double check yung product pero di nakinig",▁di,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+38,,▁guma,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+38,,gana,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+38,,▁mic,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+38,,▁sa,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+38,,bog,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+38,,▁pa,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+38,,▁tu,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+38,,nog,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+38,,▁ang,O,,O - ,,,,
+38,,▁sabi,B,SER#HAND,B - SER#HAND,"Service, Handling",,,
+38,,▁ko,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁bago,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁ko,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁i,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁place,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁order,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁ko,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁ay,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁i,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,pa,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁double,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁check,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁yung,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁product,I,SER#HAND,I - SER#HAND,"Service, Handling",,,
+38,,▁pero,O,,O - ,,,,
+38,,▁di,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+38,,▁nak,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+38,,inig,O,,O - ,,SER#RES,SER#RES,"Service, Responsiveness"
+39,sira sya at may amoy na ung adoptor diko bet kase nasayang lng pera ko,▁sira,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+39,,▁sya,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+39,,▁at,O,,O - ,,,,
+39,,▁may,B,PRO#SENS,B - PRO#SENS,"Product, Sensory",,,
+39,,▁amo,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,y,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,▁na,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,▁ung,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,▁adopt,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,or,I,PRO#SENS,I - PRO#SENS,"Product, Sensory",,,
+39,,▁di,O,,O - ,,,,
+39,,ko,O,,O - ,,,,
+39,,▁bet,O,,O - ,,,,
+39,,▁kas,O,,O - ,,,,
+39,,e,O,,O - ,,,,
+39,,▁na,B,PRI#VOM,B - PRI#VOM,"Price, Value for Money",,,
+39,,sayang,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+39,,▁l,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+39,,ng,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+39,,▁per,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+39,,a,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+39,,▁ko,I,PRI#VOM,I - PRI#VOM,"Price, Value for Money",,,
+40,0/10 di naman sya gumagawa e not satisfied buyer her.,▁0,O,,O - ,,,,
+40,,/10,O,,O - ,,,,
+40,,▁di,B,PRO#FUNC,B - PRO#FUNC,"Product, Functionality",,,
+40,,▁naman,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+40,,▁sya,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+40,,▁guma,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+40,,gawa,I,PRO#FUNC,I - PRO#FUNC,"Product, Functionality",,,
+40,,▁e,O,,O - ,,,,
+40,,▁not,O,,O - ,,,,
+40,,▁satisfied,O,,O - ,,,,
+40,,▁buy,O,,O - ,,,,
+40,,er,O,,O - ,,,,
+40,,▁her,O,,O - ,,,,
+40,,.,O,,O - ,,,,
