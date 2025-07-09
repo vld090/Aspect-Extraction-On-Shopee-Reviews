@@ -16,18 +16,19 @@ def generate():
     )
 
     #retrieve file paths
-    fp_codebook = pathlib.Path('../codebook.pdf')
-    fp_keywords = pathlib.Path('../keywords.pdf')
-    fp_train = pathlib.Path('../train-data.csv')
-    fp_test = pathlib.Path('../test-data.csv')
+    # fp_codebook = pathlib.Path('../codebook.pdf')
+    # fp_keywords = pathlib.Path('../keywords.pdf')
+    fp_codebook = pathlib.Path('../Codebook.pdf')
+    fp_train = pathlib.Path('../few-shot-examples.csv')
+    fp_test = pathlib.Path('../test.csv')
 
     model = "gemini-2.0-flash"
     
     # Read file contents
     with open(fp_codebook, 'rb') as f:
         codebook_data = f.read()
-    with open(fp_keywords, 'rb') as f:
-        keywords_data = f.read()
+    # with open(fp_keywords, 'rb') as f:
+    #     keywords_data = f.read()
     with open(fp_train, 'r', encoding='utf-8') as f:
         train_data = f.read()
     with open(fp_test, 'r', encoding='utf-8') as f:
@@ -37,20 +38,29 @@ def generate():
     parts = []
     
     # Add the main prompt text
-    parts.append(types.Part(text="You are an expert in ABSA for multilingual and code-switched data. " \
-        "Given the attached files: train-data.csv (annotated Taglish reviews), keywords.pdf (list of keywords for explicit aspects) "
-        "and codebook.pdf (aspect definitions), annotate the new Taglish reviews in test-data.csv in the same format as " \
-        "train-data.csv: review no., token, BIO Tag (Explicit), Aspect Tag (Explicit), " \
-        "Final Tag (Explicit), General Aspect, Specific Aspect Category (Explicit), " \
-        "Aspect Tag (Implicit), Final Tag (Implicit), General Aspect, " \
-        "Specific Aspect Category (Implicit). Output only the annotations in CSV format, " \
-        "no explanations or extra text." \
+    parts.append(types.Part(text="You are an expert ABSA (Aspect-Based Sentiment Analysis) annotator specializing in multilingual "
+    "and code-switched data. Your task is to annotate explicit aspects in Taglish reviews using the BIO tagging scheme. " \
+        "Input Files: " \
+        "few-shot-examples.csv: Contains annotated Taglish reviews (use as reference examples) " \
+        "test.csv: Contains new Taglish reviews to annotate " \
+        "Codebook.pdf: Contains annotation rules, aspect definitions, and keywords " \
+        "Step-by-step process: " \
+        "1. Analyze few-shot-examples.csv to understand the annotation patterns and consistency. " \
+        "2. Study Codebook.pdf to learn Aspect definitions and categories, BIO tagging rules, Keywords for explicit aspects, and Annotation guidelines. " \
+        "3. For each review in test.csv, annotate token by token. " \
+        "Output format: CSV with exactly these columns: review_no,token,bio_tag,general_aspect " \
+        "Output the annotated data in CSV format, no explanations or extra text." \
         "Rules: " \
-        "1. Follow the definitions in codebook.pdf strictly when identifying and categorizing aspects. " \
-        "2. The goal is to produce high-quality, consistent annotations to train an ABSA model. " \
-        "3. If unsure about an aspect, default to 'O' for BIO tagging and leave aspect categories blank. " \
-        "4. a review can be both explicit and implicit, but each token can only be either explicit or implicit and have one aspect tag. " \
-        "5. Use keywords.pdf only as a guide; always rely on context and the definitions in codebook.pdf to determine the aspect."
+        "1. Only annotate EXPLICIT aspects (clearly mentioned in text) " \
+        "2. Aspect categories: Use only the general categories defined in Codebook.pdf " \
+        "3. Default to 'O' and blank aspect when no aspects is found " \
+        "4. Context is key: Keywords are guides, but context and definitions determine the final aspect. " \
+        "5. Aspects can be in the form of phrases. " \
+        "Strict Requirements: " \
+        "1. Output ONLY the CSV data with headers. " \
+        "2. No explanations, commentary, or extra text. " \
+        "3. Maintain consistent annotation standards throughout. " \
+        "4. Process ALL reviews in test.csv." \
     ))
     
     # Add PDF files as inline data
@@ -61,12 +71,12 @@ def generate():
         )
     ))
     
-    parts.append(types.Part(
-        inline_data=types.Blob(
-            mime_type="application/pdf",
-            data=base64.b64encode(keywords_data).decode('utf-8')
-        )
-    ))
+    # parts.append(types.Part(
+    #     inline_data=types.Blob(
+    #         mime_type="application/pdf",
+    #         data=base64.b64encode(keywords_data).decode('utf-8')
+    #     )
+    # ))
     
     # Add CSV files as text
     parts.append(types.Part(text=train_data))
@@ -94,10 +104,10 @@ def generate():
         print(chunk.text, end="")
     
     # Save the response to a CSV file
-    with open('annotated_test_data.csv', 'w', encoding='utf-8') as f:
+    with open('annotated_explicit_test_data.csv', 'w', encoding='utf-8') as f:
         f.write(full_response)
     
-    print(f"\n\nResponse saved to 'annotated_test_data.csv'")
+    print(f"\n\nResponse saved to 'annotated_explicit_test_data.csv'")
 
 if __name__ == "__main__":
     generate()
