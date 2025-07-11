@@ -1,15 +1,12 @@
 import re
-from transformers import AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
-
-def remove_repetitive_symbols(text):
-    text = re.sub(r'[!?.]{2,}', '', text)
-    text = re.sub(r'"{2,}', '', text)
+def remove_symbols(text):
+    text = re.sub(r'[^A-Za-z0-9 ]+', '', text)
     return text
 
-def bpe_tokenization (text):
-    return tokenizer.tokenize(text)
+def word_tokens(text):
+    text = re.split(r"\s", text)
+    return text
 
 # Test
 # if __name__ == "__main__":
