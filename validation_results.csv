@@ -1,6 +1,0 @@
-,accuracy,precision,recall,f1
-BIO Tag (For Explicit Aspects),1.0,1.0,1.0,1.0
-Aspect Tag (For Explicit Aspects),0.0,0.0,0.0,0.0
-"General Aspect, Specific Aspect Category (For Explicit Aspects)",0.0,0.0,0.0,0.0
-Aspect Tag (For Implicit Aspects),0.0,0.0,0.0,0.0
-"General Aspect, Specific Aspect Category (For Implicit Aspects)",0.0,0.0,0.0,0.0
