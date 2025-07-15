@@ -3,21 +3,62 @@ import numpy as np
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report
 import re
 
+# === CONFIGURABLE FILE PATHS ===
+GENERATED_FILE = 'geminiAPI/annotated_test_data.csv'
+GROUND_TRUTH_FILE = 'validate-test-data.csv'
+
+def parse_explicit_column(explicit_str):
+    """
+    Parse the Explicit column from validate-test-data.csv into a list of (token, BIO, aspect) tuples.
+    """
+    if pd.isna(explicit_str) or explicit_str.strip() == '':
+        return []
+    # Remove leading/trailing quotes and spaces
+    explicit_str = explicit_str.strip().strip('"')
+    # Split by comma, but handle quoted tokens
+    items = re.findall(r"'([^']+)' \(([^)]*)\)", explicit_str)
+    result = []
+    for token, tag in items:
+        tag = tag.strip()
+        if tag == 'O -' or tag == 'O - ' or tag == 'O -':
+            bio, aspect = 'O', ''
+        elif tag.startswith('B -') or tag.startswith('I -'):
+            parts = tag.split('-')
+            bio = parts[0].strip()
+            aspect = parts[1].strip() if len(parts) > 1 else ''
+        else:
+            bio, aspect = 'O', ''
+        result.append((token, bio, aspect))
+    return result
+
+def parse_implicit_column(implicit_str):
+    """
+    Parse the Implicit column from validate-test-data.csv into a list of (token, aspect) tuples.
+    """
+    if pd.isna(implicit_str) or implicit_str.strip() == '':
+        return []
+    implicit_str = implicit_str.strip().strip('"')
+    items = re.findall(r"'([^']+)' \(([^)]*)\)", implicit_str)
+    result = []
+    for token, aspect in items:
+        aspect = aspect.strip()
+        result.append((token, aspect))
+    return result
+
+# === DATA LOADING (now for two files of the same format) ===
 def load_and_clean_data(generated_file, ground_truth_file):
     """
-    Load and clean the annotation data from both files
+    Load and clean the annotation data from both files (same format: Review #, Review, Explicit, Implicit)
     """
     try:
-        # Load the generated annotations
         generated_df = pd.read_csv(generated_file)
-        print(f"Generated annotations shape: {generated_df.shape}")
-        print(f"Generated columns: {list(generated_df.columns)}")
-        
-        # Load the ground truth
         ground_truth_df = pd.read_csv(ground_truth_file)
-        print(f"Ground truth shape: {ground_truth_df.shape}")
-        print(f"Ground truth columns: {list(ground_truth_df.columns)}")
-        
+        print(f"Generated shape: {generated_df.shape}, columns: {list(generated_df.columns)}")
+        print(f"Ground truth shape: {ground_truth_df.shape}, columns: {list(ground_truth_df.columns)}")
+        # Parse explicit/implicit columns for both
+        for df in [generated_df, ground_truth_df]:
+            df['ExplicitParsed'] = df['Explicit'].apply(parse_explicit_column)
+            df['ImplicitParsed'] = df['Implicit'].apply(parse_implicit_column)
         return generated_df, ground_truth_df
     except Exception as e:
         print(f"Error loading files: {e}")
@@ -86,96 +127,52 @@ def calculate_metrics(y_true, y_pred, label='Overall'):
         'f1': f1
     }
 
+# === VALIDATION FUNCTIONS (compare by Review #, token order) ===
 def validate_explicit_aspects(generated_df, ground_truth_df):
-    """
-    Validate explicit aspects separately
-    """
     print(f"\n{'='*60}")
-    print(f"EXPLICIT ASPECTS VALIDATION")
+    print(f"EXPLICIT ASPECTS VALIDATION (token-level)")
     print(f"{'='*60}")
-    
-    explicit_columns = [
-        ('BIO Tag (For Explicit Aspects)', 'BIO Tag (For Explicit Aspects)'),
-        ('Aspect Tag (For Explicit Aspects)', 'Aspect Tag (For Explicit Aspects)'),
-        ('General Aspect, Specific Aspect Category (For Explicit Aspects)', 'General Aspect, Specific Aspect Category (For Explicit Aspects)')
-    ]
-    
-    explicit_metrics = {}
-    
-    for gen_col, gt_col in explicit_columns:
-        if gen_col in generated_df.columns and gt_col in ground_truth_df.columns:
-            print(f"\n{'='*50}")
-            print(f"Comparing Explicit: {gen_col}")
-            print(f"{'='*50}")
-            
-            # Extract tags
-            if 'BIO' in gen_col:
-                gen_tags = extract_bio_tags(generated_df, gen_col)
-                gt_tags = extract_bio_tags(ground_truth_df, gt_col)
-            else:
-                gen_tags = extract_aspect_tags(generated_df, gen_col)
-                gt_tags = extract_aspect_tags(ground_truth_df, gt_col)
-            
-            # Ensure same length
-            min_len = min(len(gen_tags), len(gt_tags))
-            gen_tags = gen_tags[:min_len]
-            gt_tags = gt_tags[:min_len]
-            
-            # Calculate metrics
-            metrics = calculate_metrics(gt_tags, gen_tags, f"Explicit - {gen_col}")
-            explicit_metrics[gen_col] = metrics
-            
-            # Show some examples
-            print(f"\nSample comparisons (first 10):")
-            for i in range(min(10, len(gen_tags))):
-                print(f"  {i+1}: Ground Truth: '{gt_tags[i]}' | Generated: '{gen_tags[i]}' | Match: {gt_tags[i] == gen_tags[i]}")
-        else:
-            print(f"\nSkipping {gen_col} - column not found in one or both files")
-    
-    return explicit_metrics
+    all_gt_bio, all_pred_bio = [], []
+    all_gt_aspect, all_pred_aspect = [], []
+    for idx, gt_row in ground_truth_df.iterrows():
+        review_num = gt_row['Review #']
+        gt_explicit = gt_row['ExplicitParsed']
+        pred_row = generated_df[generated_df['Review #'] == review_num]
+        if pred_row.empty:
+            continue
+        pred_explicit = pred_row.iloc[0]['ExplicitParsed']
+        for i, (gt_token, gt_bio, gt_aspect) in enumerate(gt_explicit):
+            if i < len(pred_explicit):
+                _, pred_bio, pred_aspect = pred_explicit[i]
+                all_gt_bio.append(gt_bio)
+                all_pred_bio.append(pred_bio)
+                all_gt_aspect.append(gt_aspect)
+                all_pred_aspect.append(pred_aspect)
+    print("\nBIO Tag Metrics:")
+    bio_metrics = calculate_metrics(all_gt_bio, all_pred_bio, label='Explicit BIO Tag')
+    print("\nAspect Tag Metrics:")
+    aspect_metrics = calculate_metrics(all_gt_aspect, all_pred_aspect, label='Explicit Aspect Tag')
+    return {'BIO Tag': bio_metrics, 'Aspect Tag': aspect_metrics}
 
 def validate_implicit_aspects(generated_df, ground_truth_df):
-    """
-    Validate implicit aspects separately
-    """
     print(f"\n{'='*60}")
-    print(f"IMPLICIT ASPECTS VALIDATION")
+    print(f"IMPLICIT ASPECTS VALIDATION (token-level)")
     print(f"{'='*60}")
-    
-    implicit_columns = [
-        ('Aspect Tag (For Implicit Aspects)', 'Aspect Tag (For Implicit Aspects)'),
-        ('General Aspect, Specific Aspect Category (For Implicit Aspects)', 'General Aspect, Specific Aspect Category (For Implicit Aspects)')
-    ]
-    
-    implicit_metrics = {}
-    
-    for gen_col, gt_col in implicit_columns:
-        if gen_col in generated_df.columns and gt_col in ground_truth_df.columns:
-            print(f"\n{'='*50}")
-            print(f"Comparing Implicit: {gen_col}")
-            print(f"{'='*50}")
-            
-            # Extract tags
-            gen_tags = extract_aspect_tags(generated_df, gen_col)
-            gt_tags = extract_aspect_tags(ground_truth_df, gt_col)
-            
-            # Ensure same length
-            min_len = min(len(gen_tags), len(gt_tags))
-            gen_tags = gen_tags[:min_len]
-            gt_tags = gt_tags[:min_len]
-            
-            # Calculate metrics
-            metrics = calculate_metrics(gt_tags, gen_tags, f"Implicit - {gen_col}")
-            implicit_metrics[gen_col] = metrics
-            
-            # Show some examples
-            print(f"\nSample comparisons (first 10):")
-            for i in range(min(10, len(gen_tags))):
-                print(f"  {i+1}: Ground Truth: '{gt_tags[i]}' | Generated: '{gen_tags[i]}' | Match: {gt_tags[i] == gen_tags[i]}")
-        else:
-            print(f"\nSkipping {gen_col} - column not found in one or both files")
-    
-    return implicit_metrics
+    all_gt_aspect, all_pred_aspect = [], []
+    for idx, gt_row in ground_truth_df.iterrows():
+        review_num = gt_row['Review #']
+        gt_implicit = gt_row['ImplicitParsed']
+        pred_row = generated_df[generated_df['Review #'] == review_num]
+        if pred_row.empty:
+            continue
+        pred_implicit = pred_row.iloc[0]['ImplicitParsed']
+        for i, (gt_token, gt_aspect) in enumerate(gt_implicit):
+            if i < len(pred_implicit):
+                _, pred_aspect = pred_implicit[i]
+                all_gt_aspect.append(gt_aspect)
+                all_pred_aspect.append(pred_aspect)
+    aspect_metrics = calculate_metrics(all_gt_aspect, all_pred_aspect, label='Implicit Aspect Tag')
+    return {'Aspect Tag': aspect_metrics}
 
 def calculate_overall_metrics(explicit_metrics, implicit_metrics):
     """
@@ -257,42 +254,18 @@ def save_detailed_results(all_results):
         combined_df.to_csv('validation_results_combined.csv')
         print(f"Combined results saved to 'validation_results_combined.csv'")
 
+# === MAIN ===
 def validate_annotations():
-    """
-    Main function to validate annotations with separate explicit and implicit validation
-    """
-    print("Starting annotation validation with separate explicit and implicit analysis...")
-    
-    # Load data
-    generated_df, ground_truth_df = load_and_clean_data(
-        'geminiAPI/annotated_test_data.csv',
-        'validate-test-data.csv'
-    )
-    
+    print("Starting annotation validation (token-level, same format files)...")
+    generated_df, ground_truth_df = load_and_clean_data(GENERATED_FILE, GROUND_TRUTH_FILE)
     if generated_df is None or ground_truth_df is None:
         print("Failed to load data files")
         return
-    
-    # Ensure both dataframes have the same number of rows
-    min_rows = min(len(generated_df), len(ground_truth_df))
-    generated_df = generated_df.head(min_rows)
-    ground_truth_df = ground_truth_df.head(min_rows)
-    
-    print(f"Using {min_rows} rows for comparison")
-    
-    # Validate explicit aspects
     explicit_metrics = validate_explicit_aspects(generated_df, ground_truth_df)
-    
-    # Validate implicit aspects
     implicit_metrics = validate_implicit_aspects(generated_df, ground_truth_df)
-    
-    # Calculate overall metrics
     all_results = calculate_overall_metrics(explicit_metrics, implicit_metrics)
-    
-    # Save detailed results
     save_detailed_results(all_results)
-    
-    print(f"\nValidation completed with separate explicit and implicit analysis!")
+    print(f"\nValidation completed!")
 
 if __name__ == "__main__":
     validate_annotations() 
