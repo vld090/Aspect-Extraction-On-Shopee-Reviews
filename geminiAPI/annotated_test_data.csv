@@ -1,0 +1,284 @@
+Review #,Token,BIO Tag (For Explicit Aspects),Aspect Tag (For Explicit Aspects),Final Tag (For Explicit Aspects),"General Aspect, Specific Aspect Category (For Explicit Aspects)",Aspect Tag (For Implicit Aspects),Final Tag (For Implicit Aspects),"General Aspect, Specific Aspect Category (For Implicit Aspects)"
+1,at,O,,O - ,,,,
+1,first,O,,O - ,,,,
+1,gumagana,O,,O - ,,,,
+1,cyapero,O,,O - ,,,,
+1,pagnalowbat,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,cyapero,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,ndi,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,na,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,ya,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,magamit,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,kahit,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,ilang,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,oras,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,mo,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,cya,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,icharge,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,namamatay,O,,O - ,,PRO#FUNC,PRO#FUNC,"Product, Functionality"
+1,agadpoor,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+1,qualitynot,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+1,for,O,,O - ,,,,
+1,recommended,O,,O - ,,,,
+2,2l,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,grayblack,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,order,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,ko,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,bakit,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,850ml,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,lang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,po,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,pinadala,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,nyo,O,,O - ,,,,
+2,kung,O,,O - ,,,,
+2,di,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,na,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,po,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,available,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,product,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,dapat,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,di,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,nyo,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,pinilit,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,gusto,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+2,nyo,O,,O - ,,,,
+2,kelangan,O,,O - ,,,,
+2,ko,O,,O - ,,,,
+2,po,O,,O - ,,,,
+2,yung,O,,O - ,,,,
+2,2l,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,kahit,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,anong,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,color,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,n,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,lng,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+2,po,O,,O - ,,,,
+2,sana,O,,O - ,,,,
+2,return,O,,O - ,,,,
+2,i,O,,O - ,,,,
+2,think,O,,O - ,,,,
+2,di,O,,O - ,,,,
+2,na,O,,O - ,,,,
+2,aabot,O,,O - ,,,,
+2,sa,O,,O - ,,,,
+2,saturday,O,,O - ,,,,
+2,hay,O,,O - ,,,,
+2,naku,O,,O - ,,,,
+2,tsk,O,,O - ,,,,
+3,mahina,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,lng,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,ang,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,hangin,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,khit,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,nka,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,maximum,O,,O - ,,PRO#EFF,PRO#EFF,"Product, Effectiveness"
+3,na,O,,O - ,,,,
+3,mabilis,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+3,ma,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+3,low,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+3,batt,O,,O - ,,PRO#DUR,PRO#DUR,"Product, Durability"
+3,pinapawisan,O,,O - ,,,,
+3,p,O,,O - ,,,,
+3,rin,O,,O - ,,,,
+3,lalo,O,,O - ,,,,
+3,n,O,,O - ,,,,
+3,yung,O,,O - ,,,,
+3,batok,O,,O - ,,,,
+4,terrible,O,,O - ,,,,
+4,blue,O,,O - ,,,,
+4,order,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,ko,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,pero,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,pink,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,dumating,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,sakin,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,para,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,sana,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,sa,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,anak,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,kong,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,lalaki,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,pero,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,pink,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,yung,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,dumating,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,sakin,O,,O - ,,DEL#CORR,DEL#CORR,"Delivery, Correctness"
+4,nakaka,O,,O - ,,,,
+4,dissapoint,O,,O - ,,,,
+5,sabe,B,SER#RES,B - SER#RES,"Service, Responsiveness",,,
+5,q,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+5,ky,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+5,seller,I,SER#RES,I - SER#RES,"Service, Responsiveness",,,
+5,mga,O,,O - ,,,,
+5,mahaba,O,,O - ,,,,
+5,ang,O,,O - ,,,,
+5,ipadala,O,,O - ,,,,
+5,nya,O,,O - ,,,,
+5,pagdating,O,,O - ,,,,
+5,sakin,O,,O - ,,,,
+5,isa,O,,O - ,,,,
+5,ang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,mahaba,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,kulay,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,biege,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+5,lang,O,,O - ,,,,
+5,panu,O,,O - ,,,,
+5,pa,O,,O - ,,,,
+5,masusuot,O,,O - ,,,,
+5,ng,O,,O - ,,,,
+5,omorder,O,,O - ,,,,
+5,skin,O,,O - ,,,,
+5,e,O,,O - ,,,,
+5,ang,O,,O - ,,,,
+5,iiksi,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+6,5,O,,O - ,,,,
+6,mystery,O,,O - ,,,,
+6,box,O,,O - ,,,,
+6,binili,O,,O - ,,,,
+6,ko,O,,O - ,,,,
+6,pero,O,,O - ,,,,
+6,5,O,,O - ,,,,
+6,din,O,,O - ,,,,
+6,na,O,,O - ,,,,
+6,magkapareho,O,,O - ,,,,
+6,na,O,,O - ,,,,
+6,mystery,O,,O - ,,,,
+6,box,O,,O - ,,,,
+6,anong,O,,O - ,,,,
+6,mystery,O,,O - ,,,,
+6,jan,O,,O - ,,,,
+6,bumili,O,,O - ,,,,
+6,paman,O,,O - ,,,,
+6,din,O,,O - ,,,,
+6,ako,O,,O - ,,,,
+6,ng,O,,O - ,,,,
+6,5,O,,O - ,,,,
+6,para,O,,O - ,,,,
+6,ma,O,,O - ,,,,
+6,surprise,O,,O - ,,,,
+6,ako,O,,O - ,,,,
+6,na,O,,O - ,,,,
+6,surprise,O,,O - ,,,,
+6,nga,O,,O - ,,,,
+6,kasi,O,,O - ,,,,
+6,magkaka,O,,O - ,,,,
+6,pareho,O,,O - ,,,,
+6,umay,O,,O - ,,,,
+6,wala,O,,O - ,,,,
+6,man,O,,O - ,,,,
+6,lang,O,,O - ,,,,
+6,mouse,O,,O - ,,,,
+6,o,O,,O - ,,,,
+6,keyboard,O,,O - ,,,,
+7,grabe,O,,O - ,,,,
+7,naman,O,,O - ,,,,
+7,toh,O,,O - ,,,,
+7,2,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,liters,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,order,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,ko,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,tapos,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,dumating,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,1,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,liter,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,lang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,bibigay,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,ko,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+7,pa,O,,O - ,,,,
+7,sana,O,,O - ,,,,
+7,sa,O,,O - ,,,,
+7,mama,O,,O - ,,,,
+7,ko,O,,O - ,,,,
+7,kaso,O,,O - ,,,,
+7,pang,O,,O - ,,,,
+7,grade,O,,O - ,,,,
+7,1,O,,O - ,,,,
+7,diko,O,,O - ,,,,
+7,na,O,,O - ,,,,
+7,masauli,O,,O - ,,,,
+7,kase,O,,O - ,,,,
+7,diko,O,,O - ,,,,
+7,alam,O,,O - ,,,,
+7,pano,O,,O - ,,,,
+7,dadalhin,O,,O - ,,,,
+7,pa,O,,O - ,,,,
+7,daw,O,,O - ,,,,
+7,sa,O,,O - ,,,,
+7,may,O,,O - ,,,,
+7,jt,O,,O - ,,,,
+7,para,O,,O - ,,,,
+7,masaoli,O,,O - ,,,,
+7,ehh,O,,O - ,,,,
+7,wala,O,,O - ,,,,
+7,akong,O,,O - ,,,,
+7,alam,O,,O - ,,,,
+7,san,O,,O - ,,,,
+7,yun,O,,O - ,,,,
+8,not,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+8,original,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+8,pala,O,,O - ,,,,
+8,ehe,O,,O - ,,,,
+8,masikip,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,yung,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,isa,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,di,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,stretchable,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,kaya,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,sobrang,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,liit,O,,O - ,,PRO#SIZE,PRO#SIZE,"Product, Size / Measurement"
+8,pero,O,,O - ,,,,
+8,ok,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+8,naman,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+8,ang,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+8,iba,O,,O - ,,PRO#GEN,PRO#GEN,"Product, General"
+9,wala,O,,O - ,,,,
+9,pa,O,,O - ,,,,
+9,jusko,O,,O - ,,,,
+9,lorddd,O,,O - ,,,,
+9,unang,O,,O - ,,,,
+9,bili,O,,O - ,,,,
+9,ko,O,,O - ,,,,
+9,sa,O,,O - ,,,,
+9,cloud,O,,O - ,,,,
+9,tester,O,,O - ,,,,
+9,muna,O,,O - ,,,,
+9,grabe,O,,O - ,,,,
+9,doon,O,,O - ,,,,
+9,sobrang,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+9,bango,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+9,talaga,O,,O - ,,,,
+9,as,O,,O - ,,,,
+9,in,O,,O - ,,,,
+9,tas,O,,O - ,,,,
+9,nung,O,,O - ,,,,
+9,malaki,O,,O - ,,,,
+9,na,O,,O - ,,,,
+9,ung,O,,O - ,,,,
+9,binili,O,,O - ,,,,
+9,ko,O,,O - ,,,,
+9,mapapamura,O,,O - ,,,,
+9,ka,O,,O - ,,,,
+9,talaga,O,,O - ,,,,
+9,tangina,O,,O - ,,,,
+9,bakit,O,,O - ,,,,
+9,amoy,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+9,sabon,O,,O - ,,PRO#SENS,PRO#SENS,"Product, Sensory"
+9,sobrang,O,,O - ,,,,
+9,layo,O,,O - ,,,,
+9,sa,O,,O - ,,,,
+9,tester,O,,O - ,,,,
+9,nung,O,,O - ,,,,
+9,amoy,O,,O - ,,,,
+9,jusko,O,,O - ,,,,
+9,namann,O,,O - ,,,,
+9,nagbabayad,O,,O - ,,,,
+9,naman,O,,O - ,,,,
+9,ng,O,,O - ,,,,
+9,maayos,O,,O - ,,,,
+9,jusko,O,,O - ,,,,
+9,nakakaumay,O,,O - ,,,,
+9,ung,O,,O - ,,,,
+9,amoy,O,,O - ,,,,
