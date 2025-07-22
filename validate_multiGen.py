@@ -66,11 +66,11 @@ def calculate_exact_match_metrics(pred_df, gt_df, aspects):
     # For precision, recall, F1 in exact matching context:
     # Precision: Of samples we predicted as "all correct", how many were actually all correct
     # Recall: Of samples that should be "all correct", how many did we predict as all correct
-    precision, recall, f1, _ = precision_recall_fscore_support(
-        y_true_binary, y_pred_binary, average='binary', zero_division=0
-    )
+    # precision, recall, f1, _ = precision_recall_fscore_support(
+    #     y_true_binary, y_pred_binary, average='binary', zero_division=0
+    # )
     
-    return exact_match_accuracy, precision, recall, f1, correct_samples, total_samples
+    return exact_match_accuracy, correct_samples, total_samples
 def validate_all_aspects():
     """Main validation function"""
     # Load data
