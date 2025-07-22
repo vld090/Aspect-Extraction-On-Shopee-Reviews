@@ -96,7 +96,7 @@ def validate_all_aspects():
                     if aspect in pred_df.columns and aspect in gt_df.columns]
     
     if valid_aspects:
-        combined_accuracy, combined_precision, combined_recall, combined_f1, correct_count, total_count = \
+        combined_accuracy, correct_count, total_count = \
             calculate_exact_match_metrics(pred_df, gt_df, valid_aspects)
         
         print(f"\n{'='*50}")
@@ -104,9 +104,6 @@ def validate_all_aspects():
         print(f"{'='*50}")
         print(f"Samples with ALL aspects correct: {correct_count}/{total_count}")
         print(f"Accuracy: {combined_accuracy:.4f}")
-        print(f"Precision: {combined_precision:.4f}")
-        print(f"Recall: {combined_recall:.4f}")
-        print(f"F1 Score: {combined_f1:.4f}")
     
         # Save results
         results_df = pd.DataFrame(results)
