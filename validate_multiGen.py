@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+from sklearn.metrics import accuracy_score
 
 # File paths
 PREDICTED_FILE = 'geminiAPI/annotated_test_data.csv'
@@ -15,22 +15,12 @@ def validate_single_aspect(pred_df, gt_df, aspect):
     y_true = gt_df[aspect].fillna('0').astype(str)
     
     accuracy = accuracy_score(y_true, y_pred)
-    precision, recall, f1, _ = precision_recall_fscore_support(
-        y_true, y_pred, average='weighted', zero_division=0
-    )
     
     print(f"\n=== {aspect.upper()} ASPECT ===")
     print(f"Accuracy: {accuracy:.4f}")
-    print(f"Precision: {precision:.4f}")
-    print(f"Recall: {recall:.4f}")
-    print(f"F1 Score: {f1:.4f}")
     
     return {
-        'aspect': aspect,
-        'accuracy': accuracy,
-        'precision': precision,
-        'recall': recall,
-        'f1': f1
+        'aspect': aspect
     }
 
 def calculate_exact_match_metrics(pred_df, gt_df, aspects):

@@ -16,19 +16,19 @@ def generate():
     )
 
     #retrieve file paths
-    fp_keywords = pathlib.Path('../keywords.pdf')
-    fp_codebook = pathlib.Path('../Codebook.pdf')
-    fp_train = pathlib.Path('../few-shot-examples.csv')
-    fp_test = pathlib.Path('../test.csv')
-    # fp_test = pathlib.Path('../review-only-test.csv')
+    # fp_keywords = pathlib.Path('../keywords.pdf')
+    fp_codebook = pathlib.Path('../GeneralCodebook.pdf')
+    fp_train = pathlib.Path('../multi-gen-examples.csv')
+    # fp_test = pathlib.Path('../test.csv')
+    fp_test = pathlib.Path('../review-only-test.csv')
 
     model = "gemini-2.0-flash"
     
     # Read file contents
     with open(fp_codebook, 'rb') as f:
         codebook_data = f.read()
-    with open(fp_keywords, 'rb') as f:
-        keywords_data = f.read()
+    # with open(fp_keywords, 'rb') as f:
+    #     keywords_data = f.read()
     with open(fp_train, 'r', encoding='utf-8') as f:
         train_data = f.read()
     with open(fp_test, 'r', encoding='utf-8') as f:
@@ -39,41 +39,37 @@ def generate():
     
     # Add the main prompt text
     parts.append(types.Part(text="You are an expert ABSA (Aspect-Based Sentiment Analysis) annotator specializing in multilingual "
-    "and code-switched data. Your task is to annotate explicit and implicit aspects in Taglish reviews. Use the BIO tagging scheme for explicit aspects only. " \
+    "and code-switched data. Your task is to annotate aspects in Taglish reviews. " \
+    
         "Input Files: " \
-        "few-shot-examples.csv: Contains annotated Taglish reviews (use as reference examples) " \
-        "test.csv: Contains new Taglish reviews to annotate " \
-        # "review-only-test.csv: Contains new Taglish reviews to annotate " \
-        "Codebook.pdf: Contains annotation rules, aspect definitions " \
-        "keywords.pdf: Contains keywords for explciit aspects " \
+        "multi-gen-examples.csv: Contains annotated Taglish reviews (use as reference examples) " \
+        "review-only-test.csv: Contains new Taglish reviews to annotate " \
+        "GeneralCodebook.pdf: Contains aspect definitions " \
         "Step-by-step process: " \
-        "1. Analyze few-shot-examples.csv to understand the annotation patterns and consistency. " \
-        "2. Study Codebook.pdf to learn Aspect definitions and categories, BIO tagging rules, Keywords for explicit aspects, and Annotation guidelines. " \
-        "3. For each review in test.csv, annotate token by token. " \
+        "1. Analyze multi-gen-examples.csv to understand the annotation patterns and consistency. " \
+        "2. Study GeneralCodebook.pdf to learn Aspect definitions and categories. " \
+        "3. Annotate each review in review-only-test.csv. " \
+        "4. Identify the General Aspect. If general aspect is found tag with 1, else 0" \
+        "5. After completing the review annotations in review-only-test.csv, include an explanation justifying each tagging decision." \
         "Output format: CSV with exactly these columns only: " \
-        "1. Review #, " \
-        "2. Token, " \
-        "3. BIO Tag (For Explicit Aspects), " \
-        "4. Aspect Tag (For Explicit Aspects), " \
-        "5. Final Tag (For Explicit Aspects), " \
-        "6. General Aspect, Specific Aspect Category (For Explicit Aspects), " \
-        "7. Aspect Tag (For Implicit Aspects), " \
-        "8. Final Tag (For Implicit Aspects), " \
-        "9. General Aspect, Specific Aspect Category (For Implicit Aspects). " \
-        "Exclude the Reviews column" \
-        "Output the annotated data in CSV format, no explanations or extra text." \
+        "1. Review, " \
+        "2. product, " \
+        "3. delivery, " \
+        "4. price, " \
+        "5. service, " \
+        "6. explanation" \
+        "Output only the newly annotated data, review-only-test.csv, in CSV format, no extra text." \
         "Rules: " \
-        "1. Each token can only be either explicit or implicit and have one aspect tag " \
-        "2. Aspect categories: Use only the aspects defined in Codebook.pdf " \
-        "3. Default to 'O' and blank aspect when no aspects is found " \
-        "4. Refer to keywords.pdf for keywords for explicit aspects " \
-        "5. Context is key: Keywords are guides, but context and definitions determine the final aspect. " \
-        "6. Aspects can be in the form of phrases. " \
+        "1. Each review can only have a maximum of 4 aspect tag " \
+        "2. Aspect categories: Use only the aspects defined in GeneralCodebook.pdf " \
+        "3. Default to 0 for reviews with no aspect/s found " \
+        "4. Context is key: Always prioritize the meaning and context of the sentence over mere keyword matching. " \
+        "5. Use Keywords only as guide: Keywords are guides, not hard rules. Do not assign an aspect solely because a keyword appears if context suggests otherwise " \
         "Strict Requirements: " \
         "1. Output ONLY the CSV data with headers. " \
-        "2. No explanations, commentary, or extra text. " \
         "3. Maintain consistent annotation standards throughout. " \
-        "4. Process ALL reviews in test.csv." \
+        "4. Process ALL reviews in review-only-test.csv." \
+        
     ))
     
     # Add PDF files as inline data
@@ -84,12 +80,12 @@ def generate():
         )
     ))
     
-    parts.append(types.Part(
-        inline_data=types.Blob(
-            mime_type="application/pdf",
-            data=base64.b64encode(keywords_data).decode('utf-8')
-        )
-    ))
+    # parts.append(types.Part(
+    #     inline_data=types.Blob(
+    #         mime_type="application/pdf",
+    #         data=base64.b64encode(keywords_data).decode('utf-8')
+    #     )
+    # ))
     
     # Add CSV files as text
     parts.append(types.Part(text=train_data))
