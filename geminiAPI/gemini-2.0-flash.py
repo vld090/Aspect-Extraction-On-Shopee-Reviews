@@ -16,7 +16,7 @@ def generate():
     )
 
     #retrieve file paths
-    # fp_keywords = pathlib.Path('../keywords.pdf')
+    fp_keywords = pathlib.Path('../keywords.pdf')
     fp_codebook = pathlib.Path('../GeneralCodebook.pdf')
     fp_train = pathlib.Path('../multi-gen-examples.csv')
     # fp_test = pathlib.Path('../test.csv')
@@ -27,8 +27,8 @@ def generate():
     # Read file contents
     with open(fp_codebook, 'rb') as f:
         codebook_data = f.read()
-    # with open(fp_keywords, 'rb') as f:
-    #     keywords_data = f.read()
+    with open(fp_keywords, 'rb') as f:
+        keywords_data = f.read()
     with open(fp_train, 'r', encoding='utf-8') as f:
         train_data = f.read()
     with open(fp_test, 'r', encoding='utf-8') as f:
@@ -45,12 +45,13 @@ def generate():
         "multi-gen-examples.csv: Contains annotated Taglish reviews (use as reference examples) " \
         "review-only-test.csv: Contains new Taglish reviews to annotate " \
         "GeneralCodebook.pdf: Contains aspect definitions " \
+        "keywprds.pdf: Contains keywords for explicit aspects only " \
         "Step-by-step process: " \
         "1. Analyze multi-gen-examples.csv to understand the annotation patterns and consistency. " \
         "2. Study GeneralCodebook.pdf to learn Aspect definitions and categories. " \
         "3. Annotate each review in review-only-test.csv. " \
         "4. Identify the General Aspect. If general aspect is found tag with 1, else 0" \
-        "5. After completing the review annotations in review-only-test.csv, include an explanation justifying each tagging decision." \
+        "5. After completing the review annotations in review-only-test.csv, include an explanation of the thought process for each tagging decision." \
         "Output format: CSV with exactly these columns only: " \
         "1. Review, " \
         "2. product, " \
@@ -67,6 +68,7 @@ def generate():
         "5. Use Keywords only as guide: Keywords are guides, not hard rules. Do not assign an aspect solely because a keyword appears if context suggests otherwise " \
         "Strict Requirements: " \
         "1. Output ONLY the CSV data with headers. " \
+        "2. Output must not include the data from multi-gen-examples.csv" \
         "3. Maintain consistent annotation standards throughout. " \
         "4. Process ALL reviews in review-only-test.csv." \
         
@@ -80,12 +82,12 @@ def generate():
         )
     ))
     
-    # parts.append(types.Part(
-    #     inline_data=types.Blob(
-    #         mime_type="application/pdf",
-    #         data=base64.b64encode(keywords_data).decode('utf-8')
-    #     )
-    # ))
+    parts.append(types.Part(
+        inline_data=types.Blob(
+            mime_type="application/pdf",
+            data=base64.b64encode(keywords_data).decode('utf-8')
+        )
+    ))
     
     # Add CSV files as text
     parts.append(types.Part(text=train_data))

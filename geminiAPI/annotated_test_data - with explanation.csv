@@ -1,12 +1,14 @@
-```csv
-Review,product,delivery,price,service,explanation
-at first gumagana cyapero pagnalowbat cya ndi na ya magamit kahit ilang oras mo cya icharge namamatay agadpoor qualitynot for recommended,1,0,0,0,The review focuses on the functionality and quality of the product.
-2l grayblack order ko bakit 850ml lang po pinadala nyo kung di na po available yung product dapat di nyo pinilit yung gusto nyo kelangan ko po yung 2l kahit anong color n lng po sana   return i think di na aabot sa saturday hay naku tsk,0,1,0,1,Discusses the wrong item and delivery time.
-mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok,1,0,0,0,Focuses on product performance.
-terrible blue order ko pero pink yung dumating sakin para sana sa anak kong lalaki pero pink yung dumating sakin nakaka dissapoint,0,1,0,0,About the wrong item.
-sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa masusuot ng omorder skin e ang iiksi,1,0,0,1,About product and seller.
-5 mystery box binili ko pero 5 din na magkapareho na mystery box anong mystery jan bumili paman din ako ng 5 para ma surprise ako na surprise nga kasi magkaka pareho umay wala man lang mouse o keyboard,1,0,0,0,The review focuses on the product and its contents.
-grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pang grade 1 diko na masauli kase diko alam pano dadalhin pa daw sa may jt para masaoli ehh wala akong alam san yun,0,1,0,0,About the wrong item.
-not original pala ehe masikip yung isa di stretchable kaya sobrang liit pero ok naman ang iba,1,0,0,0,Focuses on the product's quality and fit.
-wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in tas nung malaki na ung binili ko mapapamura ka talaga tangina bakit amoy sabon sobrang layo sa tester nung amoy jusko namann nagbabayad naman ng maayos jusko nakakaumay ung amoy,1,0,0,0,The review is mainly about the scent/smell of the product.
-```
+Review #,Review,product,delivery,price,service,explanation,,,
+1,at first gumagana cyapero pagnalowbat cya ndi na ya magamit kahit ilang oras mo cya icharge namamatay agadpoor qualitynot for recommended,1,0,0,0,Product quality is poor, battery issues.,,
+2,mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok,1,0,0,0,Weak fan and battery issues, product performance.,,
+3,terrible blue order ko pero pink yung dumating sakin para sana sa anak kong lalaki pero pink yung dumating sakin nakaka dissapoint,0,1,0,0,Wrong color received, delivery issue.,,
+4,sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa masusuot ng omorder skin e ang iiksi,1,1,0,0,Wrong item length, discrepancy in delivery and product.,,
+5,grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pang grade 1 diko na masauli kase diko alam pano dadalhin pa daw sa may jt para masaoli ehh wala akong alam san yun,1,1,0,0,Incorrect volume received, issues with delivery returns.,,
+6,not original pala ehe masikip yung isa di stretchable kaya sobrang liit pero ok naman ang iba,1,0,0,0,Product is not original, size issue, quality.,
+7,wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in tas nung malaki na ung binili ko mapapamura ka talaga tangina bakit amoy sabon sobrang layo sa tester nung amoy jusko namann nagbabayad naman ng maayos jusko nakakaumay ung amoy,1,0,0,1,Scent is different from tester, quality issue, strong reaction, possible misleading information from shop.
+8,kulang ung parcel na pinadala kakaumay ung ganitong seller nxt tym check nyo muna mabuti bago ipadala hay naku never want to buy again in your shop,0,1,0,1,Incomplete parcel delivered and negative feedback on the seller.,,,
+9,ok po sana kaso hindi po stretchable kaya hindi kasya yung biggest size nila,1,0,0,0,Non-stretchable, size issue affecting product fit.,,
+10,hindi po ngccharge yung earbuds sana nagrereply din kayo sa inquiries ng mga customer nyo bad customer service,1,0,0,1,Earbuds not charging, bad customer service.,,
+11,hindi gaanong nag strait and umiinit sayang pera,1,0,1,0,Ineffective product, waste of money.,,
+12,sayang ang pera sayang ang peranagmessage ako ky seller n make sure n wlang deffect ang item bgo i ship pero no response hndi rin nagsend ng picture bgo i ship pagdating ng item di gumagananagmessage ako para sbihin n deffective ang item pero no response,1,0,1,1,Defective item, no seller response, waste of money.,
+13,di gumagana yung mic ng headset dont buy this kaya pala mura,1,0,1,0,Non-functional mic, cheap product impacting quality.,,
