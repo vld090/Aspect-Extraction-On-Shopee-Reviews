@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, hamming_loss
 
 # File paths
 PREDICTED_FILE = 'geminiAPI/annotated_test_data.csv'
@@ -24,7 +24,7 @@ def validate_single_aspect(pred_df, gt_df, aspect):
     }
 
 def calculate_exact_match_metrics(pred_df, gt_df, aspects):
-    """Calculate exact set matching metrics"""
+    """Calculate exact set matching metrics and hamming loss"""
     correct_samples = 0
     total_samples = len(pred_df)
     
@@ -32,20 +32,34 @@ def calculate_exact_match_metrics(pred_df, gt_df, aspects):
     y_true_binary = []
     y_pred_binary = []
     
+    # For hamming loss calculation
+    y_true_matrix = []
+    y_pred_matrix = []
+    
     for i in range(total_samples):
         # Check if all aspects match for this sample
         all_correct = True
+        sample_true = []
+        sample_pred = []
+        
         for aspect in aspects:
             pred_val = str(pred_df.loc[i, aspect]) if pd.notna(pred_df.loc[i, aspect]) else '0'
             true_val = str(gt_df.loc[i, aspect]) if pd.notna(gt_df.loc[i, aspect]) else '0'
             
+            # Convert to binary for hamming loss
+            sample_true.append(1 if true_val != '0' else 0)
+            sample_pred.append(1 if pred_val != '0' else 0)
+            
             if pred_val != true_val:
                 all_correct = False
-                break
         
         if all_correct:
             correct_samples += 1
             
+        # Add to matrices for hamming loss
+        y_true_matrix.append(sample_true)
+        y_pred_matrix.append(sample_pred)
+        
         # binary classification metrics (1 = all correct, 0 = not all correct)
         y_true_binary.append(1)  # Ground truth is always "all should be correct"
         y_pred_binary.append(1 if all_correct else 0)  # Prediction success
@@ -53,14 +67,11 @@ def calculate_exact_match_metrics(pred_df, gt_df, aspects):
     # Calculate metrics
     exact_match_accuracy = correct_samples / total_samples
     
-    # For precision, recall, F1 in exact matching context:
-    # Precision: Of samples we predicted as "all correct", how many were actually all correct
-    # Recall: Of samples that should be "all correct", how many did we predict as all correct
-    # precision, recall, f1, _ = precision_recall_fscore_support(
-    #     y_true_binary, y_pred_binary, average='binary', zero_division=0
-    # )
+    # Calculate hamming loss
+    h_loss = hamming_loss(y_true_matrix, y_pred_matrix)
     
-    return exact_match_accuracy, correct_samples, total_samples
+    return exact_match_accuracy, correct_samples, total_samples, h_loss
+
 def validate_all_aspects():
     """Main validation function"""
     # Load data
@@ -86,7 +97,7 @@ def validate_all_aspects():
                     if aspect in pred_df.columns and aspect in gt_df.columns]
     
     if valid_aspects:
-        combined_accuracy, correct_count, total_count = \
+        combined_accuracy, correct_count, total_count, hamming_loss_score = \
             calculate_exact_match_metrics(pred_df, gt_df, valid_aspects)
         
         print(f"\n{'='*50}")
@@ -94,6 +105,7 @@ def validate_all_aspects():
         print(f"{'='*50}")
         print(f"Samples with ALL aspects correct: {correct_count}/{total_count}")
         print(f"Accuracy: {combined_accuracy:.4f}")
+        print(f"Hamming Loss: {hamming_loss_score:.4f}")
     
         # Save results
         results_df = pd.DataFrame(results)
