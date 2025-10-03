@@ -1,0 +1,189 @@
+[
+  {
+    "review_no": "1",
+    "review": "at first gumagana cyapero pagnalowbat cya ndi na ya magamit kahit ilang oras mo cya icharge namamatay agadpoor qualitynot for recommended",
+    "extractions": [
+      {
+        "phrase": "poor quality",
+        "tokens_normalized": [
+          "poor",
+          "quality"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "2",
+    "review": "mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok",
+    "extractions": [
+      {
+        "phrase": "mahina lng ang hangin",
+        "tokens_normalized": [
+          "mahina",
+          "lng",
+          "ang",
+          "hangin"
+        ]
+      },
+      {
+        "phrase": "mabilis ma low batt",
+        "tokens_normalized": [
+          "mabilis",
+          "ma",
+          "low",
+          "batt"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "3",
+    "review": "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa masusuot ng omorder skin e ang iiksi",
+    "extractions": [
+      {
+        "phrase": "iiksi",
+        "tokens_normalized": [
+          "iiksi"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "4",
+    "review": "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pang grade 1 diko na masauli kase diko alam pano dadalhin pa daw sa may jt para masaoli ehh wala akong alam san yun",
+    "extractions": [
+      {
+        "phrase": "1 liter",
+        "tokens_normalized": [
+          "1",
+          "liter"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "5",
+    "review": "oil based kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent which is not the same sa usual na binibili ko then amoy na amoy talaga yung alchohol sa bawat perfume pero i guess its worth the price mura lng naman kaya ok",
+    "extractions": [
+      {
+        "phrase": "iba yung amoy antapang may pag kalalake rin siyang scent",
+        "tokens_normalized": [
+          "iba",
+          "yung",
+          "amoy",
+          "antapang",
+          "may",
+          "pag",
+          "kalalake",
+          "rin",
+          "siyang",
+          "scent"
+        ]
+      },
+      {
+        "phrase": "amoy na amoy talaga yung alchohol",
+        "tokens_normalized": [
+          "amoy",
+          "na",
+          "amoy",
+          "talaga",
+          "yung",
+          "alchohol"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "6",
+    "review": "not original pala ehe masikip yung isa di stretchable kaya sobrang liit pero ok naman ang iba",
+    "extractions": [
+      {
+        "phrase": "masikip yung isa",
+        "tokens_normalized": [
+          "masikip",
+          "yung",
+          "isa"
+        ]
+      },
+      {
+        "phrase": "di stretchable",
+        "tokens_normalized": [
+          "di",
+          "stretchable"
+        ]
+      },
+      {
+        "phrase": "sobrang liit",
+        "tokens_normalized": [
+          "sobrang",
+          "liit"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "7",
+    "review": "wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in tas nung malaki na ung binili ko mapapamura ka talaga tangina bakit amoy sabon sobrang layo sa tester nung amoy jusko namann nagbabayad naman ng maayos jusko nakakaumay ung amoy",
+    "extractions": [
+      {
+        "phrase": "sobrang bango",
+        "tokens_normalized": [
+          "sobrang",
+          "bango"
+        ]
+      },
+      {
+        "phrase": "amoy sabon",
+        "tokens_normalized": [
+          "amoy",
+          "sabon"
+        ]
+      },
+      {
+        "phrase": "nakakaumay ung amoy",
+        "tokens_normalized": [
+          "nakakaumay",
+          "ung",
+          "amoy"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "8",
+    "review": "hindi gaanong nag strait and umiinit sayang pera",
+    "extractions": [
+      {
+        "phrase": "hindi gaanong nag strait",
+        "tokens_normalized": [
+          "hindi",
+          "gaanong",
+          "nag",
+          "strait"
+        ]
+      },
+      {
+        "phrase": "umiinit",
+        "tokens_normalized": [
+          "umiinit"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "9",
+    "review": "hindi po ngccharge yung earbuds sana nagrereply din kayo sa inquiries ng mga customer nyo bad customer service",
+    "extractions": [
+      {
+        "phrase": "hindi po ngccharge yung earbuds",
+        "tokens_normalized": [
+          "hindi",
+          "po",
+          "ngccharge",
+          "yung",
+          "earbuds"
+        ]
+      }
+    ]
+  }
+]

@@ -36,6 +36,6 @@ def csv_to_json(csv_file_path, json_file_path):
         json.dump(final_output, json_file, indent=2, ensure_ascii=False)
 
 # Example usage
-csv_file_path = 'product_valid.csv'  # Replace with your input CSV file path
-json_file_path = 'ground_truth.json'  # Replace with your desired output JSON file path
+csv_file_path = '..\product-examples.csv'  # Replace with your input CSV file path
+json_file_path = 'product-examples.json'  # Replace with your desired output JSON file path
 csv_to_json(csv_file_path, json_file_path)

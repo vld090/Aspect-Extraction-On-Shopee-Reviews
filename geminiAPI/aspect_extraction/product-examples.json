@@ -1,0 +1,1101 @@
+[
+  {
+    "review_no": "1",
+    "review": "grabi pangalawa ko ng order sa shapee pero puro dismayado ako ang pangit ng tila subrang nipis mabilis ma punit at ang laki ng size niya alam niyo shopee mapapamura ako sa kagaguhan niyo nag speak ako na magan ang item niyo tapos ito mali pa ang pag butas",
+    "extractions": [
+      {
+        "phrase": "pangit ng tila",
+        "tokens_normalized": [
+          "pangit",
+          "ng",
+          "tila"
+        ]
+      },
+      {
+        "phrase": "subrang nipis",
+        "tokens_normalized": [
+          "subrang",
+          "nipis"
+        ]
+      },
+      {
+        "phrase": "mabilis ma punit",
+        "tokens_normalized": [
+          "mabilis",
+          "ma",
+          "punit"
+        ]
+      },
+      {
+        "phrase": "laki ng size",
+        "tokens_normalized": [
+          "laki",
+          "ng",
+          "size"
+        ]
+      },
+      {
+        "phrase": "magan ang item",
+        "tokens_normalized": [
+          "magan",
+          "ang",
+          "item"
+        ]
+      },
+      {
+        "phrase": "mali pa ang pag butas",
+        "tokens_normalized": [
+          "mali",
+          "pa",
+          "ang",
+          "pag",
+          "butas"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "2",
+    "review": "walang silbing product bwesit di gumagana dalawa pa",
+    "extractions": [
+      {
+        "phrase": "walang silbing product",
+        "tokens_normalized": [
+          "walang",
+          "silbing",
+          "product"
+        ]
+      },
+      {
+        "phrase": "di gumagana",
+        "tokens_normalized": [
+          "di",
+          "gumagana"
+        ]
+      },
+      {
+        "phrase": "maganda naman po yung neck fan",
+        "tokens_normalized": [
+          "maganda",
+          "naman",
+          "po",
+          "yung",
+          "neck",
+          "fan"
+        ]
+      },
+      {
+        "phrase": "konti lang po yung hangin",
+        "tokens_normalized": [
+          "konti",
+          "lang",
+          "po",
+          "yung",
+          "hangin"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "3",
+    "review": "010 sa effectiveness po nya 010 dahil kakalagay ko lang then wala man lang ilang kalahating minuto uminom lang ako wala na agad ung kulay sa lips ko kala ko nag sstay sya ng matagal kahit nga punasan mo pa ng wipes pero hindi man pla scam lang po",
+    "extractions": [
+      {
+        "phrase": "010 sa effectiveness po nya",
+        "tokens_normalized": [
+          "010",
+          "sa",
+          "effectiveness",
+          "po",
+          "nya"
+        ]
+      },
+      {
+        "phrase": "kakalagay ko lang then wala man lang ilang kalahating minuto uminom lang ako wala na agad ung kulay sa lips",
+        "tokens_normalized": [
+          "kakalagay",
+          "ko",
+          "lang",
+          "then",
+          "wala",
+          "man",
+          "lang",
+          "ilang",
+          "kalahating",
+          "minuto",
+          "uminom",
+          "lang",
+          "ako",
+          "wala",
+          "na",
+          "agad",
+          "ung",
+          "kulay",
+          "sa",
+          "lips"
+        ]
+      },
+      {
+        "phrase": "kala ko nag sstay sya ng matagal kahit nga punasan mo pa ng wipes pero hindi man pla",
+        "tokens_normalized": [
+          "kala",
+          "ko",
+          "nag",
+          "sstay",
+          "sya",
+          "ng",
+          "matagal",
+          "kahit",
+          "nga",
+          "punasan",
+          "mo",
+          "pa",
+          "ng",
+          "wipes",
+          "pero",
+          "hindi",
+          "man",
+          "pla"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "4",
+    "review": "maganda dn same sa picture maganda sya medyo maliit nga lang sya",
+    "extractions": [
+      {
+        "phrase": "same sa picture",
+        "tokens_normalized": [
+          "same",
+          "sa",
+          "picture"
+        ]
+      },
+      {
+        "phrase": "medyo maliit",
+        "tokens_normalized": [
+          "medyo",
+          "maliit"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "5",
+    "review": "not worth it ang bilis nya malowbat and ang tagal nya pang icharge",
+    "extractions": [
+      {
+        "phrase": "bilis nya malowbat",
+        "tokens_normalized": [
+          "bilis",
+          "nya",
+          "malowbat"
+        ]
+      },
+      {
+        "phrase": "tagal nya pang icharge",
+        "tokens_normalized": [
+          "tagal",
+          "nya",
+          "pang",
+          "icharge"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "6",
+    "review": "mahirap buksan yung payong need mo pa itulak sana na check man lang bago ipadala",
+    "extractions": [
+      {
+        "phrase": "mahirap buksan yung payong",
+        "tokens_normalized": [
+          "mahirap",
+          "buksan",
+          "yung",
+          "payong"
+        ]
+      },
+      {
+        "phrase": "need mo pa itulak",
+        "tokens_normalized": [
+          "need",
+          "mo",
+          "pa",
+          "itulak"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "7",
+    "review": "ayaw gumana ng remote control my dent ung product na pinadala ni seller sana bago ipa ship check muna mabuti ni seller ung item na ipapadala para hnd nakaka disappoint sa client pag na recieve ung item",
+    "extractions": [
+      {
+        "phrase": "ayaw gumana ng remote control",
+        "tokens_normalized": [
+          "ayaw",
+          "gumana",
+          "ng",
+          "remote",
+          "control"
+        ]
+      },
+      {
+        "phrase": "my dent ung product",
+        "tokens_normalized": [
+          "my",
+          "dent",
+          "ung",
+          "product"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "8",
+    "review": "excited ako sa order ko kasi matagal ko na gusto bumili ng mga mystery item so dahil 66 weve decided to order 5 mystery pouch expect ko 5 packs ang makukuha ko akala ko may sari sariling balot yun pala 5 products na sya sa iisang pouch",
+    "extractions": [
+      {
+        "phrase": "akala ko may sari sariling balot yun pala 5 products na sya sa iisang pouch",
+        "tokens_normalized": [
+          "akala",
+          "ko",
+          "may",
+          "sari",
+          "sariling",
+          "balot",
+          "yun",
+          "pala",
+          "5",
+          "products",
+          "na",
+          "sya",
+          "sa",
+          "iisang",
+          "pouch"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "9",
+    "review": "wrong color po yung dumating tapos yung green natanggal yung cover niya",
+    "extractions": [
+      {
+        "phrase": "yung green natanggal yung cover",
+        "tokens_normalized": [
+          "yung",
+          "green",
+          "natanggal",
+          "yung",
+          "cover"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "10",
+    "review": "510 ang mahal ng payong nd nmn ganun ka quality sira pa sabi ko seller if ayaw bilik pera ko change items nd na nag reply",
+    "extractions": [
+      {
+        "phrase": "nd nmn ganun ka quality",
+        "tokens_normalized": [
+          "nd",
+          "nmn",
+          "ganun",
+          "ka",
+          "quality"
+        ]
+      },
+      {
+        "phrase": "sira",
+        "tokens_normalized": [
+          "sira"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "11",
+    "review": "close to ok lang i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me the problem is i ordered it as gift for a man so purple is not really ok and both bottles have scratches doesnt look new for me",
+    "extractions": [
+      {
+        "phrase": "both bottles have scratches",
+        "tokens_normalized": [
+          "both",
+          "bottles",
+          "have",
+          "scratches"
+        ]
+      },
+      {
+        "phrase": "doesnt look new for me",
+        "tokens_normalized": [
+          "doesnt",
+          "look",
+          "new",
+          "for",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "12",
+    "review": "ang pangit ng item sorry ahhh n ung size kala mo pang bata",
+    "extractions": [
+      {
+        "phrase": "ang pangit ng item",
+        "tokens_normalized": [
+          "ang",
+          "pangit",
+          "ng",
+          "item"
+        ]
+      },
+      {
+        "phrase": "ung size kala mo pang bata",
+        "tokens_normalized": [
+          "ung",
+          "size",
+          "kala",
+          "mo",
+          "pang",
+          "bata"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "13",
+    "review": "5 mystery box binili ko pero 5 din na magkapareho na mystery box anong mystery jan bumili paman din ako ng 5 para ma surprise ako na surprise nga kasi magkaka pareho umay wala man lang mouse o keyboard",
+    "extractions": [
+      {
+        "phrase": "5 mystery box binili ko pero 5 din na magkapareho na mystery box",
+        "tokens_normalized": [
+          "5",
+          "mystery",
+          "box",
+          "binili",
+          "ko",
+          "pero",
+          "5",
+          "din",
+          "na",
+          "magkapareho",
+          "na",
+          "mystery",
+          "box"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "14",
+    "review": "010 d maganda yung product matqgal matuyo kumakalat sa mata hindi water proof",
+    "extractions": [
+      {
+        "phrase": "010 d maganda yung product",
+        "tokens_normalized": [
+          "010",
+          "d",
+          "maganda",
+          "yung",
+          "product"
+        ]
+      },
+      {
+        "phrase": "matqgal matuyo kumakalat sa mata",
+        "tokens_normalized": [
+          "matqgal",
+          "matuyo",
+          "kumakalat",
+          "sa",
+          "mata"
+        ]
+      },
+      {
+        "phrase": "hindi water proof",
+        "tokens_normalized": [
+          "hindi",
+          "water",
+          "proof"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "15",
+    "review": "good quality product ok naman ung order mabilis dumating well pack din kaso orde ko lima tapos isa lang ang dumating ok lang kasi nakarefund ako try ko ulit umorder sa kanila baka kasi nalito lang si seller at magpapasko madaming order",
+    "extractions": [
+      {
+        "phrase": "good quality product",
+        "tokens_normalized": [
+          "good",
+          "quality",
+          "product"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "16",
+    "review": "sigundo ko lng sya nagamit bago yung battery nilagay ko pero pahinto hinto syahindi na ako bibilin ng ganyan much better nag ahit nalang sana ulit ako",
+    "extractions": [
+      {
+        "phrase": "sigundo ko lng sya nagamit",
+        "tokens_normalized": [
+          "sigundo",
+          "ko",
+          "lng",
+          "sya",
+          "nagamit"
+        ]
+      },
+      {
+        "phrase": "bago yung battery nilagay ko pero pahinto hinto",
+        "tokens_normalized": [
+          "bago",
+          "yung",
+          "battery",
+          "nilagay",
+          "ko",
+          "pero",
+          "pahinto",
+          "hinto"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "17",
+    "review": "madikit naman kaso di pantay pantay yung cut di pantay pantay yung cut sa 1st 2 lines di pantay yun yung galing sa shop na to while sa 3rd lines sa ibang shopping app ko na binili di pantay pantay yung cut",
+    "extractions": [
+      {
+        "phrase": "madikit",
+        "tokens_normalized": [
+          "madikit"
+        ]
+      },
+      {
+        "phrase": "di pantay pantay yung cut di pantay pantay yung cut",
+        "tokens_normalized": [
+          "di",
+          "pantay",
+          "pantay",
+          "yung",
+          "cut",
+          "di",
+          "pantay",
+          "pantay",
+          "yung",
+          "cut"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "18",
+    "review": "di nasunod yung ibang color na inorder ko pero oks lng good quality nmn",
+    "extractions": [
+      {
+        "phrase": "good quality",
+        "tokens_normalized": [
+          "good",
+          "quality"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "19",
+    "review": "nung pagkabukas ko package yung keyboard is nakabukaka slightly open kala ko sira na fast delivery naman",
+    "extractions": [
+      {
+        "phrase": "nung pagkabukas ko package yung keyboard is nakabukaka slightly open",
+        "tokens_normalized": [
+          "nung",
+          "pagkabukas",
+          "ko",
+          "package",
+          "yung",
+          "keyboard",
+          "is",
+          "nakabukaka",
+          "slightly",
+          "open"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "20",
+    "review": "ang dali ra masira oy at first madali gamitin ngayon ay di na nakakaputol ng hair na sstuck na sya yun lang thanks",
+    "extractions": [
+      {
+        "phrase": "ang dali ra",
+        "tokens_normalized": [
+          "ang",
+          "dali",
+          "ra"
+        ]
+      },
+      {
+        "phrase": "at first madali gamitin",
+        "tokens_normalized": [
+          "at",
+          "first",
+          "madali",
+          "gamitin"
+        ]
+      },
+      {
+        "phrase": "di na nakakaputol ng hair",
+        "tokens_normalized": [
+          "di",
+          "na",
+          "nakakaputol",
+          "ng",
+          "hair"
+        ]
+      },
+      {
+        "phrase": "na sstuck na sya",
+        "tokens_normalized": [
+          "na",
+          "sstuck",
+          "na",
+          "sya"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "21",
+    "review": "wala seller service is excellent delivery was immidiate the product itself is poor very very weak airflow almost cant feel it hindi man lang ma ihip yung buhok ng aso",
+    "extractions": [
+      {
+        "phrase": "product itself is poor",
+        "tokens_normalized": [
+          "product",
+          "itself",
+          "is",
+          "poor"
+        ]
+      },
+      {
+        "phrase": "very weak airflow almost cant feel it hindi man lang ma ihip yung buhok ng aso",
+        "tokens_normalized": [
+          "very",
+          "weak",
+          "airflow",
+          "almost",
+          "cant",
+          "feel",
+          "it",
+          "hindi",
+          "man",
+          "lang",
+          "ma",
+          "ihip",
+          "yung",
+          "buhok",
+          "ng",
+          "aso"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "22",
+    "review": "change feedback mag isa syang nag aactivate nang timer kagabi parang sira",
+    "extractions": [
+      {
+        "phrase": "mag isa syang nag aactivate nang timer kagabi parang sira",
+        "tokens_normalized": [
+          "mag",
+          "isa",
+          "syang",
+          "nag",
+          "aactivate",
+          "nang",
+          "timer",
+          "kagabi",
+          "parang",
+          "sira"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "23",
+    "review": "dalawa yung binili ko isa sakin tsaka sa friend ko first of all kaunti lang yung laman nung isa habang medyo mas lamang yung sa isa about sa color maroon yung sa tingin kong dapat maging kakalabasan niya pero violet yung kulay niya kapag nilagay na sa labi also kulang",
+    "extractions": [
+      {
+        "phrase": "kaunti lang yung laman nung isa habang medyo mas lamang yung sa isa",
+        "tokens_normalized": [
+          "kaunti",
+          "lang",
+          "yung",
+          "laman",
+          "nung",
+          "isa",
+          "habang",
+          "medyo",
+          "mas",
+          "lamang",
+          "yung",
+          "sa",
+          "isa"
+        ]
+      },
+      {
+        "phrase": "about sa color maroon yung sa tingin kong dapat maging kakalabasan niya pero violet yung kulay niya kapag nilagay na sa labi",
+        "tokens_normalized": [
+          "about",
+          "sa",
+          "color",
+          "maroon",
+          "yung",
+          "sa",
+          "tingin",
+          "kong",
+          "dapat",
+          "maging",
+          "kakalabasan",
+          "niya",
+          "pero",
+          "violet",
+          "yung",
+          "kulay",
+          "niya",
+          "kapag",
+          "nilagay",
+          "na",
+          "sa",
+          "labi"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "24",
+    "review": "ok na sana pero hindi 10 meters 6 meters lang saan ang 4 meters kada isang roll magpa katotoo naman sa post niyo",
+    "extractions": [
+      {
+        "phrase": "hindi 10 meters 6 meters lang saan ang 4 meters kada isang roll",
+        "tokens_normalized": [
+          "hindi",
+          "10",
+          "meters",
+          "6",
+          "meters",
+          "lang",
+          "saan",
+          "ang",
+          "4",
+          "meters",
+          "kada",
+          "isang",
+          "roll"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "25",
+    "review": "amoy plastic amputa tagal ko inorder now lang dumating amoy plastic pa huhu why",
+    "extractions": [
+      {
+        "phrase": "amoy plastic",
+        "tokens_normalized": [
+          "amoy",
+          "plastic"
+        ]
+      },
+      {
+        "phrase": "amoy plastic",
+        "tokens_normalized": [
+          "amoy",
+          "plastic"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "26",
+    "review": "not good not satisfied omg sa quality nya para sakin hindi okay akala ko yung na sstrech talaga sya e hindi naman pala sa picture at live na nagbebenta goods sya in person hindi na pala pero thats business sobrang nanghinayang ako",
+    "extractions": [
+      {
+        "phrase": "not good not satisfied",
+        "tokens_normalized": [
+          "not",
+          "good",
+          "not",
+          "satisfied"
+        ]
+      },
+      {
+        "phrase": "quality nya para sakin hindi okay",
+        "tokens_normalized": [
+          "quality",
+          "nya",
+          "para",
+          "sakin",
+          "hindi",
+          "okay"
+        ]
+      },
+      {
+        "phrase": "akala ko yung na sstrech talaga sya e hindi naman pala",
+        "tokens_normalized": [
+          "akala",
+          "ko",
+          "yung",
+          "na",
+          "sstrech",
+          "talaga",
+          "sya",
+          "e",
+          "hindi",
+          "naman",
+          "pala"
+        ]
+      },
+      {
+        "phrase": "sa picture at live na nagbebenta goods sya in person hindi na pala",
+        "tokens_normalized": [
+          "sa",
+          "picture",
+          "at",
+          "live",
+          "na",
+          "nagbebenta",
+          "goods",
+          "sya",
+          "in",
+          "person",
+          "hindi",
+          "na",
+          "pala"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "27",
+    "review": "actually kala ko 10meters pro 6meters lang ng sinukat ko",
+    "extractions": [
+      {
+        "phrase": "10meters pro 6meters lang ng sinukat ko",
+        "tokens_normalized": [
+          "10meters",
+          "pro",
+          "6meters",
+          "lang",
+          "ng",
+          "sinukat",
+          "ko"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "28",
+    "review": "oil based kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent which is not the same sa usual na binibili ko then amoy na amoy talaga yung alchohol sa bawat perfume pero i guess its worth the price mura lng naman kaya ok",
+    "extractions": [
+      {
+        "phrase": "iba yung amoy antapang may pag kalalake rin siyang",
+        "tokens_normalized": [
+          "iba",
+          "yung",
+          "amoy",
+          "antapang",
+          "may",
+          "pag",
+          "kalalake",
+          "rin",
+          "siyang"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "29",
+    "review": "late dumating ung parcel and sira ung producthnd gmaganaon lng tpos wla na",
+    "extractions": [
+      {
+        "phrase": "sira ung producthnd gmaganaon lng tpos wla na",
+        "tokens_normalized": [
+          "sira",
+          "ung",
+          "producthnd",
+          "gmaganaon",
+          "lng",
+          "tpos",
+          "wla",
+          "na"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "30",
+    "review": "i dont think nsa 10meters ito lukot pa",
+    "extractions": [
+      {
+        "phrase": "i dont think nsa 10meters ito",
+        "tokens_normalized": [
+          "i",
+          "dont",
+          "think",
+          "nsa",
+          "10meters",
+          "ito"
+        ]
+      },
+      {
+        "phrase": "lukot pa",
+        "tokens_normalized": [
+          "lukot",
+          "pa"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "31",
+    "review": "hindi ko nagustuhan yung amoy i already received my parcel pero nung pag ka open ko may leak and hindi ko nagustuhan yung amoy nakakasuka yung amoy this is my first time to buy a product in this shop and i expect too much nakakadismaya",
+    "extractions": [
+      {
+        "phrase": "hindi ko nagustuhan yung amoy",
+        "tokens_normalized": [
+          "hindi",
+          "ko",
+          "nagustuhan",
+          "yung",
+          "amoy"
+        ]
+      },
+      {
+        "phrase": "hindi ko nagustuhan yung amoy nakakasuka yung amoy",
+        "tokens_normalized": [
+          "hindi",
+          "ko",
+          "nagustuhan",
+          "yung",
+          "amoy",
+          "nakakasuka",
+          "yung",
+          "amoy"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "32",
+    "review": "parang laruan yung glads niya so dissapointed",
+    "extractions": [
+      {
+        "phrase": "parang laruan yung glads niya",
+        "tokens_normalized": [
+          "parang",
+          "laruan",
+          "yung",
+          "glads",
+          "niya"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "33",
+    "review": "di gumagana mic sabog pa tunog ang sabi ko bago ko i place order ko ay ipa double check yung product pero di nakinig",
+    "extractions": [
+      {
+        "phrase": "di gumagana mic",
+        "tokens_normalized": [
+          "di",
+          "gumagana",
+          "mic"
+        ]
+      },
+      {
+        "phrase": "sabog pa tunog",
+        "tokens_normalized": [
+          "sabog",
+          "pa",
+          "tunog"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "34",
+    "review": "sira sya at may amoy na ung adoptor diko bet kase nasayang lng pera ko",
+    "extractions": [
+      {
+        "phrase": "sira sya",
+        "tokens_normalized": [
+          "sira",
+          "sya"
+        ]
+      },
+      {
+        "phrase": "may amoy na ung adoptor",
+        "tokens_normalized": [
+          "may",
+          "amoy",
+          "na",
+          "ung",
+          "adoptor"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "35",
+    "review": "010 di naman sya gumagawa e not satisfied buyer her",
+    "extractions": [
+      {
+        "phrase": "di naman sya gumagawa",
+        "tokens_normalized": [
+          "di",
+          "naman",
+          "sya",
+          "gumagawa"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "36",
+    "review": "hindi gumagana yung mic and mahina ang sounds not recommend",
+    "extractions": [
+      {
+        "phrase": "hindi gumagana yung mic",
+        "tokens_normalized": [
+          "hindi",
+          "gumagana",
+          "yung",
+          "mic"
+        ]
+      },
+      {
+        "phrase": "mahina ang sounds",
+        "tokens_normalized": [
+          "mahina",
+          "ang",
+          "sounds"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "37",
+    "review": "sobrang dismayado scammmmm ang poweradjust button as in hollow talaga defected ang ibinigay ni seller sana hindi mangyari sa iba baka naman seller may magawa kang compromise para dito",
+    "extractions": [
+      {
+        "phrase": "ang poweradjust button as in hollow talaga defected ang ibinigay ni seller",
+        "tokens_normalized": [
+          "ang",
+          "poweradjust",
+          "button",
+          "as",
+          "in",
+          "hollow",
+          "talaga",
+          "defected",
+          "ang",
+          "ibinigay",
+          "ni",
+          "seller"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "38",
+    "review": "ok po sana kaso hindi po stretchable kaya hindi kasya yung biggest size nila",
+    "extractions": [
+      {
+        "phrase": "hindi po stretchable",
+        "tokens_normalized": [
+          "hindi",
+          "po",
+          "stretchable"
+        ]
+      },
+      {
+        "phrase": "hindi kasya yung biggest size nila",
+        "tokens_normalized": [
+          "hindi",
+          "kasya",
+          "yung",
+          "biggest",
+          "size",
+          "nila"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "39",
+    "review": "idk nabili ko sa piso sale gumagana naman kaso ilang minuto na ako nagchacharge ganun parin battery percent hindi nadadagdagan o minsan 1 lang na dagdag sa loob ng 10 mins",
+    "extractions": [
+      {
+        "phrase": "gumagana naman kaso ilang minuto na ako nagchacharge ganun parin battery percent hindi nadadagdagan o minsan 1 lang na dagdag sa loob ng 10 mins",
+        "tokens_normalized": [
+          "gumagana",
+          "naman",
+          "kaso",
+          "ilang",
+          "minuto",
+          "na",
+          "ako",
+          "nagchacharge",
+          "ganun",
+          "parin",
+          "battery",
+          "percent",
+          "hindi",
+          "nadadagdagan",
+          "o",
+          "minsan",
+          "1",
+          "lang",
+          "na",
+          "dagdag",
+          "sa",
+          "loob",
+          "ng",
+          "10",
+          "mins"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "40",
+    "review": "1 earbuds is not working di gumagana ang isang earbuds sayang maganda sana next time po paki double check kung working ang product na binibenta nyo bago i ship sa buyer",
+    "extractions": [
+      {
+        "phrase": "1 earbuds is not working di gumagana ang isang earbuds",
+        "tokens_normalized": [
+          "1",
+          "earbuds",
+          "is",
+          "not",
+          "working",
+          "di",
+          "gumagana",
+          "ang",
+          "isang",
+          "earbuds"
+        ]
+      }
+    ]
+  }
+]

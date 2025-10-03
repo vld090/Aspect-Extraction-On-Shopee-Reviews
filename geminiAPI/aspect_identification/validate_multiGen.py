@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics import accuracy_score, hamming_loss
 
 # File paths
-PREDICTED_FILE = 'geminiAPI/annotated_test_data.csv'
+PREDICTED_FILE = 'restructured_test.csv'
 GROUND_TRUTH_FILE = 'valid_multigen.csv'
 
 # Aspects to validate
@@ -20,7 +20,8 @@ def validate_single_aspect(pred_df, gt_df, aspect):
     print(f"Accuracy: {accuracy:.4f}")
     
     return {
-        'aspect': aspect
+        'aspect': aspect,
+        'accuracy': accuracy
     }
 
 def calculate_exact_match_metrics(pred_df, gt_df, aspects):
@@ -81,16 +82,24 @@ def validate_all_aspects():
     print(f"Predicted data shape: {pred_df.shape}")
     print(f"Ground truth data shape: {gt_df.shape}")
     
+    # Store results for text file
+    results_text = []
+    results_text.append(f"Validation Results\n{'='*50}\n")
+    results_text.append(f"Predicted file: {PREDICTED_FILE}")
+    results_text.append(f"Ground truth file: {GROUND_TRUTH_FILE}\n")
+    
     # Validate each aspect
-    results = []
+    aspect_results = []
     
     for aspect in ASPECTS:
         if aspect in pred_df.columns and aspect in gt_df.columns:
             result = validate_single_aspect(pred_df, gt_df, aspect)
-            results.append(result)
-            
+            aspect_results.append(result)
+            results_text.append(f"\n{aspect.upper()} ASPECT")
+            results_text.append(f"Accuracy: {result['accuracy']:.4f}")
         else:
             print(f"WARNING: '{aspect}' column not found in both files")
+            results_text.append(f"\nWARNING: '{aspect}' column not found in both files")
     
     # Combined metrics
     valid_aspects = [aspect for aspect in ASPECTS 
@@ -100,17 +109,17 @@ def validate_all_aspects():
         combined_accuracy, correct_count, total_count, hamming_loss_score = \
             calculate_exact_match_metrics(pred_df, gt_df, valid_aspects)
         
-        print(f"\n{'='*50}")
-        print("EXACT MATCH (ALL ASPECTS)")
-        print(f"{'='*50}")
-        print(f"Samples with ALL aspects correct: {correct_count}/{total_count}")
-        print(f"Accuracy: {combined_accuracy:.4f}")
-        print(f"Hamming Loss: {hamming_loss_score:.4f}")
+        results_text.append(f"\n{'='*50}")
+        results_text.append("EXACT MATCH (ALL ASPECTS)")
+        results_text.append(f"{'='*50}")
+        results_text.append(f"Samples with ALL aspects correct: {correct_count}/{total_count}")
+        results_text.append(f"Accuracy: {combined_accuracy:.4f}")
+        results_text.append(f"Hamming Loss: {hamming_loss_score:.4f}")
     
-        # Save results
-        results_df = pd.DataFrame(results)
-        results_df.to_csv('validation_results.csv', index=False)
-        print(f"\nResults saved to 'validation_results.csv'")
+        # Save results to text file
+        with open('validation_results.txt', 'w', encoding='utf-8') as f:
+            f.write('\n'.join(results_text))
+        print(f"\nResults saved to 'validation_results.txt'")
 
 if __name__ == "__main__":
     validate_all_aspects()

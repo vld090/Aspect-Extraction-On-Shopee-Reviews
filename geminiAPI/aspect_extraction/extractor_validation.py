@@ -85,15 +85,30 @@ def validate_extractions(predicted_file: str, ground_truth_file: str) -> dict:
         'missing_reviews': len(ground_truth_dict) - len(predicted_dict)
     }
 
-# Example usage
+def save_results(results: dict, results_file: str):
+    with open(results_file, 'w', encoding='utf-8') as f:
+        f.write(f"Total reviews in ground truth: {results['total_reviews']}\n")
+        f.write(f"Missing reviews: {results['missing_reviews']}\n")
+        f.write(f"Average F1 Score: {results['average_f1']:.3f}\n\n")
+        
+        for review_no, review_results in results['review_results'].items():
+            f.write(f"Review {review_no}:\n")
+            f.write(f"F1 Score: {review_results['f1_score']:.3f}\n")
+            if review_results['is_missing']:
+                f.write("Status: Missing in predictions\n")
+            f.write(f"Predicted: {review_results['predicted_phrases']}\n")
+            f.write(f"Ground Truth: {review_results['ground_truth_phrases']}\n\n")
+    
+    print(f"Results have been saved to {results_file}")
+
 if __name__ == "__main__":
     predicted_file = "output.json"
     ground_truth_file = "ground_truth.json"
-    results_file = "extractor_validation_results.txt"
+    results_file = "extractor_validation2_results.txt"
     
     # First run the CSV to JSON conversion
     from csvtojson import csv_to_json
-    csv_to_json('extracted_data.csv', predicted_file)
+    csv_to_json('new_extracted_data.csv', predicted_file)
     
     # Then validate the extractions
     results = validate_extractions(predicted_file, ground_truth_file)

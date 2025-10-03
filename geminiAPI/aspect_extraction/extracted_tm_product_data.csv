@@ -1,0 +1,11 @@
+```csv
+review no.,review,phrase,explanation
+1,at first gumagana cyapero pagnalowbat cya ndi na ya magamit kahit ilang oras mo cya icharge namamatay agadpoor qualitynot for recommended,poor quality,Directly describes the quality of the product.
+2,mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok,mahina lng ang hangin,Describes product performance (fan's air flow).
+2,mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok,mabilis ma low batt,Describes the product's battery life.
+5,oil based kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent which is not the same sa usual na binibili ko then amoy na amoy talaga yung alchohol sa bawat perfume pero i guess its worth the price mura lng naman kaya ok,kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent,Describing scent aspect
+7,wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in tas nung malaki na ung binili ko mapapamura ka talaga tangina bakit amoy sabon sobrang layo sa tester nung amoy jusko namann nagbabayad naman ng maayos jusko nakakaumay ung amoy,wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in,Describes the product performance
+7,wala pa jusko lorddd unang bili ko sa cloud tester muna grabe doon sobrang bango talaga as in tas nung malaki na ung binili ko mapapamura ka talaga tangina bakit amoy sabon sobrang layo sa tester nung amoy jusko namann nagbabayad naman ng maayos jusko nakakaumay ung amoy,bakit amoy sabon sobrang layo sa tester nung amoy,Describes the scent of the product
+8,hindi gaanong nag strait and umiinit sayang pera,hindi gaanong nag strait,Product performance
+9,hindi po ngccharge yung earbuds sana nagrereply din kayo sa inquiries ng mga customer nyo bad customer service,hindi po ngccharge yung earbuds,The earbuds is not charging
+```

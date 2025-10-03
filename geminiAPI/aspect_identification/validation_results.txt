@@ -1,0 +1,25 @@
+Validation Results
+==================================================
+
+Predicted file: restructured_test.csv
+Ground truth file: valid_multigen.csv
+
+
+PRODUCT ASPECT
+Accuracy: 0.9231
+
+DELIVERY ASPECT
+Accuracy: 1.0000
+
+PRICE ASPECT
+Accuracy: 0.9231
+
+SERVICE ASPECT
+Accuracy: 1.0000
+
+==================================================
+EXACT MATCH (ALL ASPECTS)
+==================================================
+Samples with ALL aspects correct: 11/13
+Accuracy: 0.8462
+Hamming Loss: 0.0385
