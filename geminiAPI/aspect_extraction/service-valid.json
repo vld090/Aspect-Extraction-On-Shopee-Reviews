@@ -1,0 +1,228 @@
+[
+  {
+    "review_no": "3",
+    "review": "2l grayblack order ko bakit 850ml lang po pinadala nyo kung di na po available yung product dapat di nyo pinilit yung gusto nyo kelangan ko po yung 2l kahit anong color n lng po sana   return i think di na aabot sa saturday hay naku tsk",
+    "extractions": [
+      {
+        "phrase": "kung di na po available yung product dapat di nyo pinilit",
+        "tokens_normalized": [
+          "kung",
+          "di",
+          "na",
+          "po",
+          "available",
+          "yung",
+          "product",
+          "dapat",
+          "di",
+          "nyo",
+          "pinilit"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "6",
+    "review": "010 sa effectiveness po nya 010 dahil kakalagay ko lang then wala man lang ilang kalahating minuto uminom lang ako wala na agad ung kulay sa lips ko kala ko nag sstay sya ng matagal kahit nga punasan mo pa ng wipes pero hindi man pla scam lang po",
+    "extractions": [
+      {
+        "phrase": "scam lang po",
+        "tokens_normalized": [
+          "scam",
+          "lang",
+          "po"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "18",
+    "review": "close to ok lang i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me the problem is i ordered it as gift for a man so purple is not really ok and both bottles have scratches doesnt look new for me",
+    "extractions": [
+      {
+        "phrase": "i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me",
+        "tokens_normalized": [
+          "i",
+          "contacted",
+          "the",
+          "seller",
+          "and",
+          "they",
+          "admitted",
+          "that",
+          "they",
+          "intentionaly",
+          "sent",
+          "the",
+          "wrong",
+          "color",
+          "without",
+          "informing",
+          "me"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "23",
+    "review": "good quality product ok naman ung order mabilis dumating well pack din kaso orde ko lima tapos isa lang ang dumating ok lang kasi nakarefund ako try ko ulit umorder sa kanila baka kasi nalito lang si seller at magpapasko madaming order",
+    "extractions": [
+      {
+        "phrase": "well pack",
+        "tokens_normalized": [
+          "well",
+          "pack"
+        ]
+      },
+      {
+        "phrase": "nakarefund ako",
+        "tokens_normalized": [
+          "nakarefund",
+          "ako"
+        ]
+      },
+      {
+        "phrase": "nalito lang si seller",
+        "tokens_normalized": [
+          "nalito",
+          "lang",
+          "si",
+          "seller"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "46",
+    "review": "panget dito bumili pinapalitan yong order mo talaga kainis ng shop nato masyadong scam",
+    "extractions": [
+      {
+        "phrase": "panget dito bumili",
+        "tokens_normalized": [
+          "panget",
+          "dito",
+          "bumili"
+        ]
+      },
+      {
+        "phrase": "pinapalitan yong order mo",
+        "tokens_normalized": [
+          "pinapalitan",
+          "yong",
+          "order",
+          "mo"
+        ]
+      },
+      {
+        "phrase": "kainis ng shop nato masyadong scam",
+        "tokens_normalized": [
+          "kainis",
+          "ng",
+          "shop",
+          "nato",
+          "masyadong",
+          "scam"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "61",
+    "review": "sobrang dismayado scammmmm ang poweradjust button as in hollow talaga defected ang ibinigay ni seller sana hindi mangyari sa iba baka naman seller may magawa kang compromise para dito",
+    "extractions": [
+      {
+        "phrase": "scammmmm",
+        "tokens_normalized": [
+          "scammmmm"
+        ]
+      },
+      {
+        "phrase": "baka naman seller may magawa kang compromise para dito",
+        "tokens_normalized": [
+          "baka",
+          "naman",
+          "seller",
+          "may",
+          "magawa",
+          "kang",
+          "compromise",
+          "para",
+          "dito"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "69",
+    "review": "nakaka disappoint tong seller na to yellow bee yung inorder ko ibang design yung dumating sana ngchat man lang meron na ako nung ganitong design nagka doble pa tuloy kakainis",
+    "extractions": [
+      {
+        "phrase": "nakaka disappoint tong seller na to",
+        "tokens_normalized": [
+          "nakaka",
+          "disappoint",
+          "tong",
+          "seller",
+          "na",
+          "to"
+        ]
+      },
+      {
+        "phrase": "sana ngchat man lang",
+        "tokens_normalized": [
+          "sana",
+          "ngchat",
+          "man",
+          "lang"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "74",
+    "review": "ito ung order ko sana kaso mali na ibigay sana double or triple check before iship para walang ganyan na nangyayari para same na walang naaabala",
+    "extractions": [
+      {
+        "phrase": "sana double or triple check before iship",
+        "tokens_normalized": [
+          "sana",
+          "double",
+          "or",
+          "triple",
+          "check",
+          "before",
+          "iship"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "100",
+    "review": "hindi po ngccharge yung earbuds sana nagrereply din kayo sa inquiries ng mga customer nyo bad customer service",
+    "extractions": [
+      {
+        "phrase": "sana nagrereply din kayo sa inquiries ng mga customer nyo",
+        "tokens_normalized": [
+          "sana",
+          "nagrereply",
+          "din",
+          "kayo",
+          "sa",
+          "inquiries",
+          "ng",
+          "mga",
+          "customer",
+          "nyo"
+        ]
+      },
+      {
+        "phrase": "bad customer service",
+        "tokens_normalized": [
+          "bad",
+          "customer",
+          "service"
+        ]
+      }
+    ]
+  }
+]

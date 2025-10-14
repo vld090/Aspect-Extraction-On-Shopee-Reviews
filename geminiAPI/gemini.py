@@ -4,7 +4,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 from pathlib import Path
-from .prompts import get_prompt, TaskType
+from prompts import get_prompt, TaskType
 
 load_dotenv()
 
@@ -18,6 +18,7 @@ def generate(task_type: TaskType, example_file=None, test_file=None, output_file
     base_path = Path(__file__).parent.parent
     fp_keywords = base_path / 'TMKeywords.pdf'
     fp_codebook = base_path / 'GeneralCodebook.pdf'
+    # fp_codebook = base_path / 'CompleteCodebook.pdf'
 
     # Use provided files or defaults
     fp_example = example_file if example_file else (base_path / 'multi-gen-examples.csv')
@@ -73,5 +74,6 @@ def generate(task_type: TaskType, example_file=None, test_file=None, output_file
     
     print(f"\n\nResponse saved to '{output}'")
 
-if __name__ == "__main__":
-    generate("identification")  # or generate("extraction")
+# if __name__ == "__main__":
+#     generate(TaskType.EXTRACT_SERVICE, "service-examples.json", "service-test.csv")  
+    # or generate("extraction")

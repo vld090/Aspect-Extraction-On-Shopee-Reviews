@@ -1,0 +1,38 @@
+[
+  {
+    "review_no": "9",
+    "review": "not worth it ang bilis nya malowbat and ang tagal nya pang icharge",
+    "extractions": [
+      {
+        "phrase": "not worth it",
+        "tokens_normalized": [
+          "not",
+          "worth",
+          "it"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "49",
+    "review": "sira sya at may amoy na ung adoptor diko bet kase nasayang lng pera ko",
+    "extractions": [
+      {
+        "phrase": "mura lng",
+        "tokens_normalized": [
+          "mura",
+          "lng"
+        ]
+      },
+      {
+        "phrase": "nasayang lng pera ko",
+        "tokens_normalized": [
+          "nasayang",
+          "lng",
+          "pera",
+          "ko"
+        ]
+      }
+    ]
+  }
+]

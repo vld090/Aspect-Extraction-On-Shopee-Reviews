@@ -1,0 +1,263 @@
+[
+  {
+    "review_no": "5",
+    "review": "d po maganda naman po yung neck fan pero po napaka tagal po sya dumating dec9 po dec 23 napo sya dumating chaka po pink po inorder ko bakit po white yung dumating pero konti lang po yung hangin thank you po driver at seller",
+    "extractions": [
+      {
+        "phrase": "dec 23 napo sya dumating",
+        "tokens_normalized": [
+          "dec",
+          "23",
+          "napo",
+          "sya",
+          "dumating"
+        ]
+      },
+      {
+        "phrase": "pink po inorder ko bakit po white yung dumating",
+        "tokens_normalized": [
+          "pink",
+          "po",
+          "inorder",
+          "ko",
+          "bakit",
+          "po",
+          "white",
+          "yung",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "11",
+    "review": "wrong color  design sana kung di na available yung black mag message namn kayo if ano available desisyon yarrrnnn kakainis ganitong seller",
+    "extractions": [
+      {
+        "phrase": "wrong color design",
+        "tokens_normalized": [
+          "wrong",
+          "color",
+          "design"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "15",
+    "review": "wrong color po yung dumating tapos yung green natanggal yung cover niya",
+    "extractions": [
+      {
+        "phrase": "wrong color po yung dumating",
+        "tokens_normalized": [
+          "wrong",
+          "color",
+          "po",
+          "yung",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "17",
+    "review": "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa masusuot ng omorder skin e ang iiksi",
+    "extractions": [
+      {
+        "phrase": "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba",
+        "tokens_normalized": [
+          "sabe",
+          "q",
+          "ky",
+          "seller",
+          "mga",
+          "mahaba",
+          "ang",
+          "ipadala",
+          "nya",
+          "pagdating",
+          "sakin",
+          "isa",
+          "ang",
+          "mahaba"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "18",
+    "review": "close to ok lang i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me the problem is i ordered it as gift for a man so purple is not really ok and both bottles have scratches doesnt look new for me",
+    "extractions": [
+      {
+        "phrase": "i ordered it as gift for a man so purple is not really ok",
+        "tokens_normalized": [
+          "i",
+          "ordered",
+          "it",
+          "as",
+          "gift",
+          "for",
+          "a",
+          "man",
+          "so",
+          "purple",
+          "is",
+          "not",
+          "really",
+          "ok"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "21",
+    "review": "5 mystery box binili ko pero 5 din na magkapareho na mystery box anong mystery jan bumili paman din ako ng 5 para ma surprise ako na surprise nga kasi magkaka pareho umay wala man lang mouse o keyboard",
+    "extractions": [
+      {
+        "phrase": "wala man lang mouse o keyboard",
+        "tokens_normalized": [
+          "wala",
+          "man",
+          "lang",
+          "mouse",
+          "o",
+          "keyboard"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "23",
+    "review": "good quality product ok naman ung order mabilis dumating well pack din kaso orde ko lima tapos isa lang ang dumating ok lang kasi nakarefund ako try ko ulit umorder sa kanila baka kasi nalito lang si seller at magpapasko madaming order",
+    "extractions": [
+      {
+        "phrase": "ung order mabilis dumating",
+        "tokens_normalized": [
+          "ung",
+          "order",
+          "mabilis",
+          "dumating"
+        ]
+      },
+      {
+        "phrase": "orde ko lima tapos isa lang ang dumating",
+        "tokens_normalized": [
+          "orde",
+          "ko",
+          "lima",
+          "tapos",
+          "isa",
+          "lang",
+          "ang",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "26",
+    "review": "mali po ata yung na bigay ni seller were expecting na ma received yung parang gradient na water bottle pero iba po yung na received namin but okay lang anjan na yan eh",
+    "extractions": [
+      {
+        "phrase": "were expecting na ma received yung parang gradient na water bottle pero iba po yung na received",
+        "tokens_normalized": [
+          "were",
+          "expecting",
+          "na",
+          "ma",
+          "received",
+          "yung",
+          "parang",
+          "gradient",
+          "na",
+          "water",
+          "bottle",
+          "pero",
+          "iba",
+          "po",
+          "yung",
+          "na",
+          "received"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "30",
+    "review": "nung pagkabukas ko package yung keyboard is nakabukaka slightly open kala ko sira na fast delivery naman",
+    "extractions": [
+      {
+        "phrase": "fast delivery naman",
+        "tokens_normalized": [
+          "fast",
+          "delivery",
+          "naman"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "32",
+    "review": "ang dali ra masira oy at first madali gamitin ngayon ay di na nakakaputol ng hair na sstuck na sya yun lang thanks",
+    "extractions": [
+      {
+        "phrase": "delivery was immidiate",
+        "tokens_normalized": [
+          "delivery",
+          "was",
+          "immidiate"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "36",
+    "review": "amoy plastic amputa tagal ko inorder now lang dumating amoy plastic pa huhu why",
+    "extractions": [
+      {
+        "phrase": "tagal ko inorder now lang dumating",
+        "tokens_normalized": [
+          "tagal",
+          "ko",
+          "inorder",
+          "now",
+          "lang",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "43",
+    "review": "hindi ko nagustuhan yung amoy i already received my parcel pero nung pag ka open ko may leak and hindi ko nagustuhan yung amoy nakakasuka yung amoy this is my first time to buy a product in this shop and i expect too much nakakadismaya",
+    "extractions": [
+      {
+        "phrase": "pag ka open ko may leak",
+        "tokens_normalized": [
+          "pag",
+          "ka",
+          "open",
+          "ko",
+          "may",
+          "leak"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "57",
+    "review": "kulang ung parcel na pinadala kakaumay ung ganitong seller nxt tym check nyo muna mabuti bago ipadala hay naku never want to buy again in your shop",
+    "extractions": [
+      {
+        "phrase": "kulang ung parcel na pinadala",
+        "tokens_normalized": [
+          "kulang",
+          "ung",
+          "parcel",
+          "na",
+          "pinadala"
+        ]
+      }
+    ]
+  }
+]

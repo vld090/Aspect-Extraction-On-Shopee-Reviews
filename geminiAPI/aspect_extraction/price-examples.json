@@ -1,0 +1,30 @@
+[
+  {
+    "review_no": "40",
+    "review": "oil based kadisappoint lang yung cloud ksi parang iba yung amoy antapang may pag kalalake rin siyang scent which is not the same sa usual na binibili ko then amoy na amoy talaga yung alchohol sa bawat perfume pero i guess its worth the price mura lng naman kaya ok",
+    "extractions": [
+      {
+        "phrase": "worth the price",
+        "tokens_normalized": [
+          "worth",
+          "the",
+          "price"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "58",
+    "review": "sayang ang pera sayang ang peranagmessage ako ky seller n make sure n wlang deffect ang item bgo i ship pero no response hndi rin nagsend ng picture bgo i ship pagdating ng item di gumagananagmessage ako para sbihin n deffective ang item pero no response",
+    "extractions": [
+      {
+        "phrase": "sayang ang pera",
+        "tokens_normalized": [
+          "sayang",
+          "ang",
+          "pera"
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
 import json
 from typing import List, Set
+import os
 
 def tokenize(phrase: str) -> Set[str]:
     """Convert a phrase into a set of tokens."""
@@ -38,6 +39,7 @@ def calculate_review_f1_score(predicted_phrases: List[str], ground_truth_phrases
 
 def validate_extractions(predicted_file: str, ground_truth_file: str) -> dict:
     """Validate extractions and return metrics."""
+
     # Load files
     with open(predicted_file, 'r', encoding='utf-8') as f:
         predicted = json.load(f)
@@ -101,30 +103,30 @@ def save_results(results: dict, results_file: str):
     
     print(f"Results have been saved to {results_file}")
 
-if __name__ == "__main__":
-    predicted_file = "output.json"
-    ground_truth_file = "ground_truth.json"
-    results_file = "extractor_validation2_results.txt"
+# if __name__ == "__main__":
+#     predicted_file = "output.json"
+#     ground_truth_file = "ground_truth.json"
+#     results_file = "extractor_validation2_results.txt"
     
-    # First run the CSV to JSON conversion
-    from csvtojson import csv_to_json
-    csv_to_json('new_extracted_data.csv', predicted_file)
+#     # First run the CSV to JSON conversion
+#     from utils import csv_to_json
+#     csv_to_json('new_extracted_data.csv', predicted_file)
     
-    # Then validate the extractions
-    results = validate_extractions(predicted_file, ground_truth_file)
+#     # Then validate the extractions
+#     results = validate_extractions(predicted_file, ground_truth_file)
     
-    # Save results to text file
-    with open(results_file, 'w', encoding='utf-8') as f:
-        f.write(f"Total reviews in ground truth: {results['total_reviews']}\n")
-        f.write(f"Missing reviews: {results['missing_reviews']}\n")
-        f.write(f"Average F1 Score: {results['average_f1']:.3f}\n\n")
+#     # Save results to text file
+#     with open(results_file, 'w', encoding='utf-8') as f:
+#         f.write(f"Total reviews in ground truth: {results['total_reviews']}\n")
+#         f.write(f"Missing reviews: {results['missing_reviews']}\n")
+#         f.write(f"Average F1 Score: {results['average_f1']:.3f}\n\n")
         
-        for review_no, review_results in results['review_results'].items():
-            f.write(f"Review {review_no}:\n")
-            f.write(f"F1 Score: {review_results['f1_score']:.3f}\n")
-            if review_results['is_missing']:
-                f.write("Status: Missing in predictions\n")
-            f.write(f"Predicted: {review_results['predicted_phrases']}\n")
-            f.write(f"Ground Truth: {review_results['ground_truth_phrases']}\n\n")
+#         for review_no, review_results in results['review_results'].items():
+#             f.write(f"Review {review_no}:\n")
+#             f.write(f"F1 Score: {review_results['f1_score']:.3f}\n")
+#             if review_results['is_missing']:
+#                 f.write("Status: Missing in predictions\n")
+#             f.write(f"Predicted: {review_results['predicted_phrases']}\n")
+#             f.write(f"Ground Truth: {review_results['ground_truth_phrases']}\n\n")
     
-    print(f"Results have been saved to {results_file}")
+#     print(f"Results have been saved to {results_file}")

@@ -1,13 +1,19 @@
 import pandas as pd
 import numpy as np
+import os
 from sklearn.metrics import accuracy_score, hamming_loss
 
-# File paths
-PREDICTED_FILE = 'restructured_test.csv'
-GROUND_TRUTH_FILE = 'valid_multigen.csv'
-
 # Aspects to validate
-ASPECTS = ['product', 'delivery', 'price', 'service']
+# general
+# ASPECTS = ['product', 'delivery', 'price', 'service']
+# specific: product
+# ASPECTS = ['color', 'condition', 'correctness', 'durability', 'effectiveness', 'functionality', 'material', 'sensory', 'measurement', 'general']
+# specific: delivery
+# ASPECTS = ['condition', 'correctness', 'timeliness', 'general']
+# specific: price
+# ASPECTS = ['affordability', 'value_for_money', 'general']
+# specific: service
+# ASPECTS = ['handling', 'responsiveness', 'trustworthiness', 'general']
 
 def validate_single_aspect(pred_df, gt_df, aspect):
     """Validate a single aspect column"""
@@ -73,11 +79,11 @@ def calculate_exact_match_metrics(pred_df, gt_df, aspects):
     
     return exact_match_accuracy, correct_samples, total_samples, h_loss
 
-def validate_all_aspects():
+def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: list) -> dict:
     """Main validation function"""
     # Load data
-    pred_df = pd.read_csv(PREDICTED_FILE)
-    gt_df = pd.read_csv(GROUND_TRUTH_FILE)
+    pred_df = pd.read_csv(predicted_file)
+    gt_df = pd.read_csv(ground_truth_file)
     
     print(f"Predicted data shape: {pred_df.shape}")
     print(f"Ground truth data shape: {gt_df.shape}")
@@ -85,13 +91,11 @@ def validate_all_aspects():
     # Store results for text file
     results_text = []
     results_text.append(f"Validation Results\n{'='*50}\n")
-    results_text.append(f"Predicted file: {PREDICTED_FILE}")
-    results_text.append(f"Ground truth file: {GROUND_TRUTH_FILE}\n")
     
     # Validate each aspect
     aspect_results = []
     
-    for aspect in ASPECTS:
+    for aspect in aspects:
         if aspect in pred_df.columns and aspect in gt_df.columns:
             result = validate_single_aspect(pred_df, gt_df, aspect)
             aspect_results.append(result)
@@ -102,7 +106,7 @@ def validate_all_aspects():
             results_text.append(f"\nWARNING: '{aspect}' column not found in both files")
     
     # Combined metrics
-    valid_aspects = [aspect for aspect in ASPECTS 
+    valid_aspects = [aspect for aspect in aspects 
                     if aspect in pred_df.columns and aspect in gt_df.columns]
     
     if valid_aspects:
@@ -116,10 +120,21 @@ def validate_all_aspects():
         results_text.append(f"Accuracy: {combined_accuracy:.4f}")
         results_text.append(f"Hamming Loss: {hamming_loss_score:.4f}")
     
+    return {
+        'results_text': results_text,
+        'aspect_results': aspect_results,
+        'combined_accuracy': combined_accuracy,
+        'correct_count': correct_count,
+        'total_count': total_count,
+        'hamming_loss': hamming_loss_score
+    }
+
+def save_result_txt(results: dict, results_file: str):
         # Save results to text file
-        with open('validation_results.txt', 'w', encoding='utf-8') as f:
-            f.write('\n'.join(results_text))
-        print(f"\nResults saved to 'validation_results.txt'")
+        # Save results to text file in the same directory as this script
+        with open(results_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(results['results_text']))
+        print(f"\nResults saved to {results_file}")
 
 if __name__ == "__main__":
     validate_all_aspects()

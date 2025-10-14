@@ -1,0 +1,172 @@
+[
+  {
+    "review_no": "3",
+    "review": "2l grayblack order ko bakit 850ml lang po pinadala nyo kung di na po available yung product dapat di nyo pinilit yung gusto nyo kelangan ko po yung 2l kahit anong color n lng po sana   return i think di na aabot sa saturday hay naku tsk",
+    "extractions": [
+      {
+        "phrase": "850ml lang po pinadala nyo",
+        "tokens_normalized": [
+          "850ml",
+          "lang",
+          "po",
+          "pinadala",
+          "nyo"
+        ]
+      },
+      {
+        "phrase": "di na aabot sa saturday",
+        "tokens_normalized": [
+          "di",
+          "na",
+          "aabot",
+          "sa",
+          "saturday"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "14",
+    "review": "terrible blue order ko pero pink yung dumating sakin para sana sa anak kong lalaki pero pink yung dumating sakin nakaka dissapoint",
+    "extractions": [
+      {
+        "phrase": "pink yung dumating sakin",
+        "tokens_normalized": [
+          "pink",
+          "yung",
+          "dumating",
+          "sakin"
+        ]
+      },
+      {
+        "phrase": "pink yung dumating sakin",
+        "tokens_normalized": [
+          "pink",
+          "yung",
+          "dumating",
+          "sakin"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "27",
+    "review": "hindi black yung eyeliner na dumating pwro black yakaga inorder ko",
+    "extractions": [
+      {
+        "phrase": "hindi black yung eyeliner na dumating",
+        "tokens_normalized": [
+          "hindi",
+          "black",
+          "yung",
+          "eyeliner",
+          "na",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "28",
+    "review": "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pang grade 1 diko na masauli kase diko alam pano dadalhin pa daw sa may jt para masaoli ehh wala akong alam san yun",
+    "extractions": [
+      {
+        "phrase": "tapos dumating 1 liter lang",
+        "tokens_normalized": [
+          "tapos",
+          "dumating",
+          "1",
+          "liter",
+          "lang"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "29",
+    "review": "di nasunod yung ibang color na inorder ko pero oks lng good quality nmn",
+    "extractions": [
+      {
+        "phrase": "di nasunod yung ibang color na inorder ko",
+        "tokens_normalized": [
+          "di",
+          "nasunod",
+          "yung",
+          "ibang",
+          "color",
+          "na",
+          "inorder",
+          "ko"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "59",
+    "review": "i dont know what to say pero disappointed ako although magaganda yung nakuha ng mga kasama ko sa bahay yung nakuha ko eto gamepad at sampayan wala ring kwenta yung customer service walang reply at all ang tagal din ng deliver",
+    "extractions": [
+      {
+        "phrase": "ang tagal din ng deliver",
+        "tokens_normalized": [
+          "ang",
+          "tagal",
+          "din",
+          "ng",
+          "deliver"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "69",
+    "review": "nakaka disappoint tong seller na to yellow bee yung inorder ko ibang design yung dumating sana ngchat man lang meron na ako nung ganitong design nagka doble pa tuloy kakainis",
+    "extractions": [
+      {
+        "phrase": "ibang design yung dumating",
+        "tokens_normalized": [
+          "ibang",
+          "design",
+          "yung",
+          "dumating"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "74",
+    "review": "ito ung order ko sana kaso mali na ibigay sana double or triple check before iship para walang ganyan na nangyayari para same na walang naaabala",
+    "extractions": [
+      {
+        "phrase": "mali na ibigay sana double or triple check before iship",
+        "tokens_normalized": [
+          "mali",
+          "na",
+          "ibigay",
+          "sana",
+          "double",
+          "or",
+          "triple",
+          "check",
+          "before",
+          "iship"
+        ]
+      }
+    ]
+  },
+  {
+    "review_no": "95",
+    "review": "salamat po seller good quality pa din pangalawang beses ko na itong bili sa item na to hindi ito akin pinabili lang nakakabadtrip lang po ang ninja van bukod sa sakto sa time frame talaga na delay pa ang delivery nila akoy naiinis dahil hindi ko napansin na sila pala",
+    "extractions": [
+      {
+        "phrase": "delay pa ang delivery nila",
+        "tokens_normalized": [
+          "delay",
+          "pa",
+          "ang",
+          "delivery",
+          "nila"
+        ]
+      }
+    ]
+  }
+]

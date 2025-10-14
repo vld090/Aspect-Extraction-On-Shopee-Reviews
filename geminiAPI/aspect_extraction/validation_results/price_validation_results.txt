@@ -1,0 +1,14 @@
+Total reviews in ground truth: 2
+Missing reviews: 0
+Average F1 Score: 0.944
+
+Review 9:
+F1 Score: 1.000
+Predicted: ['not worth it']
+Ground Truth: ['not worth it']
+
+Review 49:
+F1 Score: 0.889
+Predicted: ['nasayang lng pera ko']
+Ground Truth: ['mura lng', 'nasayang lng pera ko']
+

@@ -1,0 +1,49 @@
+Total reviews in ground truth: 9
+Missing reviews: 0
+Average F1 Score: 0.721
+
+Review 3:
+F1 Score: 0.667
+Predicted: ['850ml lang po pinadala nyo', 'di na aabot sa saturday']
+Ground Truth: ['di na aabot sa saturday']
+
+Review 14:
+F1 Score: 0.353
+Predicted: ['pink yung dumating sakin', 'pink yung dumating sakin']
+Ground Truth: ['blue order ko pero pink yung dumating', 'para sana sa anak kong lalaki pero pink yung dumating']
+
+Review 27:
+F1 Score: 1.000
+Predicted: ['hindi black yung eyeliner na dumating']
+Ground Truth: ['hindi black yung eyeliner na dumating']
+
+Review 28:
+F1 Score: 0.714
+Predicted: ['tapos dumating 1 liter lang']
+Ground Truth: ['2 liters order ko tapos dumating 1 liter lang']
+
+Review 29:
+F1 Score: 1.000
+Predicted: ['di nasunod yung ibang color na inorder ko']
+Ground Truth: ['di nasunod yung ibang color na inorder ko']
+
+Review 59:
+F1 Score: 1.000
+Predicted: ['ang tagal din ng deliver']
+Ground Truth: ['ang tagal din ng deliver']
+
+Review 69:
+F1 Score: 0.667
+Predicted: ['ibang design yung dumating']
+Ground Truth: ['yellow bee yung inorder ko ibang design yung dumating']
+
+Review 74:
+F1 Score: 0.462
+Predicted: ['mali na ibigay sana double or triple check before iship']
+Ground Truth: ['mali na ibigay']
+
+Review 95:
+F1 Score: 0.625
+Predicted: ['delay pa ang delivery nila']
+Ground Truth: ['sakto sa time frame talaga na delay pa ang delivery nila']
+

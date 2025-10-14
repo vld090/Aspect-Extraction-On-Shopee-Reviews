@@ -1,0 +1,49 @@
+Total reviews in ground truth: 9
+Missing reviews: 0
+Average F1 Score: 0.869
+
+Review 3:
+F1 Score: 0.800
+Predicted: ['bakit 850ml lang po pinadala nyo', 'kung di na po available yung product dapat di nyo pinilit yung gusto nyo']
+Ground Truth: ['kung di na po available yung product dapat di nyo pinilit']
+
+Review 6:
+F1 Score: 1.000
+Predicted: ['scam lang po']
+Ground Truth: ['scam lang po']
+
+Review 18:
+F1 Score: 1.000
+Predicted: ['i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me']
+Ground Truth: ['i contacted the seller and they admitted that they intentionaly sent the wrong color without informing me']
+
+Review 23:
+F1 Score: 0.750
+Predicted: ['mabilis dumating', 'nakarefund ako', 'nalito lang si seller']
+Ground Truth: ['well pack', 'nakarefund ako', 'nalito lang si seller']
+
+Review 46:
+F1 Score: 0.833
+Predicted: ['pinapalitan yong order mo talaga', 'kainis ng shop nato masyadong scam']
+Ground Truth: ['panget dito bumili', 'pinapalitan yong order mo', 'kainis ng shop nato masyadong scam']
+
+Review 61:
+F1 Score: 0.833
+Predicted: ['scammmmm', 'defected ang ibinigay ni seller', 'baka naman seller may magawa kang compromise para dito']
+Ground Truth: ['scammmmm', 'baka naman seller may magawa kang compromise para dito']
+
+Review 69:
+F1 Score: 1.000
+Predicted: ['nakaka disappoint tong seller na to', 'sana ngchat man lang']
+Ground Truth: ['nakaka disappoint tong seller na to', 'sana ngchat man lang']
+
+Review 74:
+F1 Score: 0.609
+Predicted: ['mali na ibigay', 'sana double or triple check before iship para walang ganyan na nangyayari para same na walang naaabala']
+Ground Truth: ['sana double or triple check before iship']
+
+Review 100:
+F1 Score: 1.000
+Predicted: ['sana nagrereply din kayo sa inquiries ng mga customer nyo', 'bad customer service']
+Ground Truth: ['sana nagrereply din kayo sa inquiries ng mga customer nyo', 'bad customer service']
+
