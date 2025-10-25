@@ -1,0 +1,41 @@
+## Extraction Error Analysis
+
+### Summary by Error Type
+Perfect Matches (F1=1.000): 3
+Under-Extraction Cases: 3
+Over-Extraction Cases: 2
+Partial Cases: 1
+Incorrect Cases (F1<0.25): 0
+
+--------------------------------------------------
+
+### 1. Under-Extraction Cases (Predicted tokens are a subset of Ground Truth)
+Review 28 (F1: 0.714):
+  Predicted: ['tapos dumating 1 liter lang']
+  Ground Truth: ['2 liters order ko tapos dumating 1 liter lang']
+
+Review 69 (F1: 0.667):
+  Predicted: ['ibang design yung dumating']
+  Ground Truth: ['yellow bee yung inorder ko ibang design yung dumating']
+
+Review 95 (F1: 0.625):
+  Predicted: ['delay pa ang delivery nila']
+  Ground Truth: ['sakto sa time frame talaga na delay pa ang delivery nila']
+
+### 2. Over-Extraction Cases (Ground Truth tokens are a subset of Predicted)
+Review 3 (F1: 0.667):
+  Predicted: ['850ml lang po pinadala nyo', 'di na aabot sa saturday']
+  Ground Truth: ['di na aabot sa saturday']
+
+Review 74 (F1: 0.462):
+  Predicted: ['mali na ibigay sana double or triple check before iship']
+  Ground Truth: ['mali na ibigay']
+
+### 3. Partial Cases (Token sets have unique tokens in both)
+Review 14 (F1: 0.353):
+  Predicted: ['pink yung dumating sakin', 'pink yung dumating sakin']
+  Ground Truth: ['blue order ko pero pink yung dumating', 'para sana sa anak kong lalaki pero pink yung dumating']
+
+### 4. Incorrect Cases (F1 < 0.25 with little to no overlap)
+No Incorrect cases found.
+

@@ -1,0 +1,21 @@
+Validation Results
+==================================================
+
+
+AFFORDABILITY ASPECT
+Accuracy: 0.8750
+
+VALUE_FOR_MONEY ASPECT
+Accuracy: 0.8750
+
+GENERAL ASPECT
+Accuracy: 1.0000
+
+==================================================
+EXACT MATCH (ALL ASPECTS)
+==================================================
+Samples with ALL aspects correct: 7/8
+Accuracy: 0.8750
+Hamming Loss: 0.0833
+Micro F1 Score (Multi-Aspect): 0.8750
+Macro F1 Score (Multi-Aspect): 0.5697

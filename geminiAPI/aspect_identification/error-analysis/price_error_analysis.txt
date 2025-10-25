@@ -1,0 +1,47 @@
+Error Analysis: Aspect Identification
+==================================================
+
+
+--- AFFORDABILITY ASPECT ---
+
+Precision: 0.6667
+Recall: 1.0000
+F1: 0.8000
+True Positives (TP): 2
+False Positives (FP - Aspect *wrongly* identified): 1
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 5
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+  1. Pred Val: '1'. Text: "[Review text not available, index: 7]..."
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+
+--- VALUE_FOR_MONEY ASPECT ---
+
+Precision: 1.0000
+Recall: 0.8333
+F1: 0.9091
+True Positives (TP): 5
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 1
+True Negatives (TN): 2
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+  1. Actual Val: '1'. Text: "[Review text not available, index: 7]..."
+
+--- GENERAL ASPECT ---
+
+Precision: 0.0000
+Recall: 0.0000
+F1: 0.0000
+True Positives (TP): 0
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 8
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):

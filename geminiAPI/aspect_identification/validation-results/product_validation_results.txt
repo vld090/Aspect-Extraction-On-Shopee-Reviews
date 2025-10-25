@@ -1,0 +1,42 @@
+Validation Results
+==================================================
+
+
+COLOR ASPECT
+Accuracy: 0.9333
+
+CONDITION ASPECT
+Accuracy: 1.0000
+
+CORRECTNESS ASPECT
+Accuracy: 0.7333
+
+DURABILITY ASPECT
+Accuracy: 0.8667
+
+EFFECTIVENESS ASPECT
+Accuracy: 0.8667
+
+FUNCTIONALITY ASPECT
+Accuracy: 0.7333
+
+MATERIAL ASPECT
+Accuracy: 0.9333
+
+SENSORY ASPECT
+Accuracy: 1.0000
+
+MEASUREMENT ASPECT
+Accuracy: 0.8667
+
+GENERAL ASPECT
+Accuracy: 0.6667
+
+==================================================
+EXACT MATCH (ALL ASPECTS)
+==================================================
+Samples with ALL aspects correct: 4/15
+Accuracy: 0.2667
+Hamming Loss: 0.1400
+Micro F1 Score (Multi-Aspect): 0.6182
+Macro F1 Score (Multi-Aspect): 0.5194

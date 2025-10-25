@@ -20,3 +20,5 @@ EXACT MATCH (ALL ASPECTS)
 Samples with ALL aspects correct: 18/23
 Accuracy: 0.7826
 Hamming Loss: 0.0761
+Micro F1 Score (Multi-Aspect): 0.9136
+Macro F1 Score (Multi-Aspect): 0.9243

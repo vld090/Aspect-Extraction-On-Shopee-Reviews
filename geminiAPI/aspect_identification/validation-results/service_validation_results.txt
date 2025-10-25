@@ -1,0 +1,24 @@
+Validation Results
+==================================================
+
+
+HANDLING ASPECT
+Accuracy: 0.7500
+
+RESPONSIVENESS ASPECT
+Accuracy: 0.8750
+
+TRUSTWORTHINESS ASPECT
+Accuracy: 0.8750
+
+GENERAL ASPECT
+Accuracy: 0.8750
+
+==================================================
+EXACT MATCH (ALL ASPECTS)
+==================================================
+Samples with ALL aspects correct: 4/8
+Accuracy: 0.5000
+Hamming Loss: 0.1562
+Micro F1 Score (Multi-Aspect): 0.7619
+Macro F1 Score (Multi-Aspect): 0.5764

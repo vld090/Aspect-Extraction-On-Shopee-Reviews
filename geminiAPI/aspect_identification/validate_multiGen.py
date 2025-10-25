@@ -1,19 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
-from sklearn.metrics import accuracy_score, hamming_loss
-
-# Aspects to validate
-# general
-# ASPECTS = ['product', 'delivery', 'price', 'service']
-# specific: product
-# ASPECTS = ['color', 'condition', 'correctness', 'durability', 'effectiveness', 'functionality', 'material', 'sensory', 'measurement', 'general']
-# specific: delivery
-# ASPECTS = ['condition', 'correctness', 'timeliness', 'general']
-# specific: price
-# ASPECTS = ['affordability', 'value_for_money', 'general']
-# specific: service
-# ASPECTS = ['handling', 'responsiveness', 'trustworthiness', 'general']
+from sklearn.metrics import accuracy_score, hamming_loss, f1_score
 
 def validate_single_aspect(pred_df, gt_df, aspect):
     """Validate a single aspect column"""
@@ -77,9 +65,110 @@ def calculate_exact_match_metrics(pred_df, gt_df, aspects):
     # Calculate hamming loss
     h_loss = hamming_loss(y_true_matrix, y_pred_matrix)
     
-    return exact_match_accuracy, correct_samples, total_samples, h_loss
+    return exact_match_accuracy, correct_samples, total_samples, h_loss, y_pred_matrix, y_true_matrix
 
-def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: list) -> dict:
+def get_true_pred_aspects(pred_df: pd.DataFrame, gt_df: pd.DataFrame, aspect: str) -> list:
+    result = []
+    has_text = 'Review' in gt_df.columns
+
+    for i in range(len(pred_df)):
+        pred_val = str(pred_df.loc[i, aspect]).strip().lower() if pd.notna(pred_df.loc[i, aspect]) else '0'
+        true_val = str(gt_df.loc[i, aspect]).strip().lower() if pd.notna(gt_df.loc[i, aspect]) else '0'
+        
+        predicted_binary = 1 if pred_val != '0' else 0
+        actual_binary = 1 if true_val != '0' else 0
+
+        sample_data = {
+            'predicted': predicted_binary,
+            'actual': actual_binary,
+            'predicted_value': pred_val,
+            'actual_value': true_val,
+            'index': i
+        }
+        
+        if has_text:
+            # 'Review' from gt_df
+            sample_data['Review'] = str(gt_df.loc[i, 'Review'])
+            
+        result.append(sample_data)
+        
+    return result
+
+def identification_error_analysis(pred_df: pd.DataFrame, gt_df: pd.DataFrame, aspects: list) -> dict:
+    """Analyze common identification errors for all aspects."""
+    analysis = {
+        'aspect': {}
+    }
+
+    for aspect in aspects:
+        if aspect not in pred_df.columns or aspect not in gt_df.columns:
+            continue
+            
+        results = get_true_pred_aspects(pred_df, gt_df, aspect)
+        
+        fp = [r for r in results if r['predicted'] == 1 and r['actual'] == 0] # False Positives (FP): Predicted 1, Actual 0 (Aspect *wrongly* identified)
+        fn = [r for r in results if r['predicted'] == 0 and r['actual'] == 1] # False Negatives (FN): Predicted 0, Actual 1 (Aspect *missed*)
+        
+        tp = [r for r in results if r['predicted'] == 1 and r['actual'] == 1] # True Positives (TP): Predicted 1, Actual 1
+        tn = [r for r in results if r['predicted'] == 0 and r['actual'] == 0] # True Negatives (TN): Predicted 0, Actual 0
+
+        precision = len(tp) / (len(tp) + len(fp)) if (len(tp) + len(fp)) > 0 else 0.0  # Precision = TP / (TP + FP)
+        recall = len(tp) / (len(tp) + len(fn)) if (len(tp) + len(fn)) > 0 else 0.0 # Recall = TP / (TP + FN)
+        f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0 # F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+        
+        analysis['aspect'][aspect] = {
+            'true_positives': len(tp),
+            'true_negatives': len(tn),
+            'false_positives': len(fp),
+            'false_negatives': len(fn),
+            'precision': precision,
+            'recall': recall,
+            'f1_score': f1_score,
+            'fp_examples': fp[:5],  # Top 5 examples
+            'fn_examples': fn[:5]   # Top 5 examples
+        }
+    
+    return analysis
+
+def save_error_analysis(analysis: dict, analysis_file: str):
+    """Save error analysis results to a file."""
+    results_text = ["Error Analysis: Aspect Identification\n" + "="*50 + "\n"]
+    
+    for aspect, data in analysis['aspect'].items():
+        results_text.append(f"\n--- {aspect.upper()} ASPECT ---\n")
+        results_text.append(f"Precision: {data['precision']:.4f}")
+        results_text.append(f"Recall: {data['recall']:.4f}")
+        results_text.append(f"F1: {data['f1_score']:.4f}")
+        results_text.append(f"True Positives (TP): {data['true_positives']}")
+        results_text.append(f"False Positives (FP - Aspect *wrongly* identified): {data['false_positives']}")
+        results_text.append(f"False Negatives (FN - Aspect *missed*): {data['false_negatives']}")
+        results_text.append(f"True Negatives (TN): {data['true_negatives']}")
+
+        # FP Examples
+        results_text.append("\nTOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):")
+        for i, fp_ex in enumerate(data['fp_examples']):
+            text = fp_ex.get('Review', f"[Review text not available, index: {fp_ex['index']}]")
+            results_text.append(f"  {i+1}. Pred Val: '{fp_ex['predicted_value']}'. Text: \"{text[:100]}...\"")
+        
+        # FN Examples
+        results_text.append("\nTOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):")
+        for i, fn_ex in enumerate(data['fn_examples']):
+            text = fn_ex.get('Review', f"[Review text not available, index: {fn_ex['index']}]")
+            results_text.append(f"  {i+1}. Actual Val: '{fn_ex['actual_value']}'. Text: \"{text[:100]}...\"")
+    
+    # Save results to text file
+    with open(analysis_file, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(results_text))
+    print(f"\nError analysis has been saved to {analysis_file}")
+
+def save_result_txt(results: dict, results_file: str):
+        # Save results to text file
+        with open(results_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(results['results_text']))
+        print(f"\nResults saved to {results_file}")
+
+def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: list,
+                         results_file: str, error_analysis_file: str) -> dict:
     """Main validation function"""
     # Load data
     pred_df = pd.read_csv(predicted_file)
@@ -87,6 +176,11 @@ def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: l
     
     print(f"Predicted data shape: {pred_df.shape}")
     print(f"Ground truth data shape: {gt_df.shape}")
+    
+    # Check if dataframes have the same length before proceeding
+    if len(pred_df) != len(gt_df):
+        print("ERROR: Predicted and Ground Truth files have different number of rows.")
+        return {}
     
     # Store results for text file
     results_text = []
@@ -110,31 +204,40 @@ def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: l
                     if aspect in pred_df.columns and aspect in gt_df.columns]
     
     if valid_aspects:
-        combined_accuracy, correct_count, total_count, hamming_loss_score = \
+        combined_accuracy, correct_count, total_count, hamming_loss_score, y_true_matrix, y_pred_matrix = \
             calculate_exact_match_metrics(pred_df, gt_df, valid_aspects)
         
+        if y_true_matrix:
+        # Calculate micro and macro F1 scores
+            micro_f1 = f1_score(y_true_matrix, y_pred_matrix, average='micro')
+            macro_f1 = f1_score(y_true_matrix, y_pred_matrix, average='macro')
+
         results_text.append(f"\n{'='*50}")
         results_text.append("EXACT MATCH (ALL ASPECTS)")
         results_text.append(f"{'='*50}")
         results_text.append(f"Samples with ALL aspects correct: {correct_count}/{total_count}")
         results_text.append(f"Accuracy: {combined_accuracy:.4f}")
         results_text.append(f"Hamming Loss: {hamming_loss_score:.4f}")
+        results_text.append(f"Micro F1 Score (Multi-Aspect): {micro_f1:.4f}")
+        results_text.append(f"Macro F1 Score (Multi-Aspect): {macro_f1:.4f}")
     
+    save_result_txt({'results_text': results_text}, results_file)
+
+    # --- Error Analysis ---
+    if valid_aspects:
+        error_analysis_results = identification_error_analysis(pred_df, gt_df, valid_aspects)
+        save_error_analysis(error_analysis_results, error_analysis_file)
+
     return {
         'results_text': results_text,
         'aspect_results': aspect_results,
         'combined_accuracy': combined_accuracy,
         'correct_count': correct_count,
         'total_count': total_count,
-        'hamming_loss': hamming_loss_score
+        'hamming_loss': hamming_loss_score,
+        'micro_f1': micro_f1,
+        'macro_f1': macro_f1
     }
-
-def save_result_txt(results: dict, results_file: str):
-        # Save results to text file
-        # Save results to text file in the same directory as this script
-        with open(results_file, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(results['results_text']))
-        print(f"\nResults saved to {results_file}")
 
 if __name__ == "__main__":
     validate_all_aspects()

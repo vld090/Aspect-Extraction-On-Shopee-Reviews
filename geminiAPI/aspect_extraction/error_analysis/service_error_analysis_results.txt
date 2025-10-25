@@ -1,0 +1,39 @@
+## Extraction Error Analysis
+
+### Summary by Error Type
+Perfect Matches (F1=1.000): 4
+Under-Extraction Cases: 0
+Over-Extraction Cases: 3
+Partial Cases: 2
+Incorrect Cases (F1<0.25): 0
+
+--------------------------------------------------
+
+### 1. Under-Extraction Cases (Predicted tokens are a subset of Ground Truth)
+No pure Under-Extraction cases found.
+
+### 2. Over-Extraction Cases (Ground Truth tokens are a subset of Predicted)
+Review 3 (F1: 0.800):
+  Predicted: ['bakit 850ml lang po pinadala nyo', 'kung di na po available yung product dapat di nyo pinilit yung gusto nyo']
+  Ground Truth: ['kung di na po available yung product dapat di nyo pinilit']
+
+Review 61 (F1: 0.833):
+  Predicted: ['scammmmm', 'defected ang ibinigay ni seller', 'baka naman seller may magawa kang compromise para dito']
+  Ground Truth: ['scammmmm', 'baka naman seller may magawa kang compromise para dito']
+
+Review 74 (F1: 0.609):
+  Predicted: ['mali na ibigay', 'sana double or triple check before iship para walang ganyan na nangyayari para same na walang naaabala']
+  Ground Truth: ['sana double or triple check before iship']
+
+### 3. Partial Cases (Token sets have unique tokens in both)
+Review 23 (F1: 0.750):
+  Predicted: ['mabilis dumating', 'nakarefund ako', 'nalito lang si seller']
+  Ground Truth: ['well pack', 'nakarefund ako', 'nalito lang si seller']
+
+Review 46 (F1: 0.833):
+  Predicted: ['pinapalitan yong order mo talaga', 'kainis ng shop nato masyadong scam']
+  Ground Truth: ['panget dito bumili', 'pinapalitan yong order mo', 'kainis ng shop nato masyadong scam']
+
+### 4. Incorrect Cases (F1 < 0.25 with little to no overlap)
+No Incorrect cases found.
+

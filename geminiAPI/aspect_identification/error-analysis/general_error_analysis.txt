@@ -1,0 +1,66 @@
+Error Analysis: Aspect Identification
+==================================================
+
+
+--- PRODUCT ASPECT ---
+
+Precision: 0.8750
+Recall: 0.8750
+F1: 0.8750
+True Positives (TP): 14
+False Positives (FP - Aspect *wrongly* identified): 2
+False Negatives (FN - Aspect *missed*): 2
+True Negatives (TN): 5
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+  1. Pred Val: '1'. Text: "sayang ang pera sayang ang peranagmessage ako ky seller n make sure n wlang deffect ang item bgo i s..."
+  2. Pred Val: '1'. Text: "there are items that was not included and the seller wont even reply to my messages sa sobrang mura ..."
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+  1. Actual Val: '1'. Text: "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa ..."
+  2. Actual Val: '1'. Text: "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pan..."
+
+--- DELIVERY ASPECT ---
+
+Precision: 1.0000
+Recall: 0.8000
+F1: 0.8889
+True Positives (TP): 8
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 2
+True Negatives (TN): 13
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+  1. Actual Val: '1'. Text: "there are items that was not included and the seller wont even reply to my messages sa sobrang mura ..."
+  2. Actual Val: '1'. Text: "wrong color ipinadala ni seller sakin pero yung crocs itself is okay naman goods na for its price se..."
+
+--- PRICE ASPECT ---
+
+Precision: 1.0000
+Recall: 0.8750
+F1: 0.9333
+True Positives (TP): 7
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 1
+True Negatives (TN): 15
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+  1. Actual Val: '1'. Text: "wrong color ipinadala ni seller sakin pero yung crocs itself is okay naman goods na for its price se..."
+
+--- SERVICE ASPECT ---
+
+Precision: 1.0000
+Recall: 1.0000
+F1: 1.0000
+True Positives (TP): 8
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 15
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):

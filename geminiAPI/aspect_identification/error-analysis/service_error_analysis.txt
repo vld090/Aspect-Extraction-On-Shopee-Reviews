@@ -1,0 +1,64 @@
+Error Analysis: Aspect Identification
+==================================================
+
+
+--- HANDLING ASPECT ---
+
+Precision: 0.6000
+Recall: 1.0000
+F1: 0.7500
+True Positives (TP): 3
+False Positives (FP - Aspect *wrongly* identified): 2
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 3
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+  1. Pred Val: '1'. Text: "[Review text not available, index: 3]..."
+  2. Pred Val: '1'. Text: "[Review text not available, index: 5]..."
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+
+--- RESPONSIVENESS ASPECT ---
+
+Precision: 0.8000
+Recall: 1.0000
+F1: 0.8889
+True Positives (TP): 4
+False Positives (FP - Aspect *wrongly* identified): 1
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 3
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+  1. Pred Val: '1'. Text: "[Review text not available, index: 6]..."
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+
+--- TRUSTWORTHINESS ASPECT ---
+
+Precision: 1.0000
+Recall: 0.5000
+F1: 0.6667
+True Positives (TP): 1
+False Positives (FP - Aspect *wrongly* identified): 0
+False Negatives (FN - Aspect *missed*): 1
+True Negatives (TN): 6
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
+  1. Actual Val: '1'. Text: "[Review text not available, index: 5]..."
+
+--- GENERAL ASPECT ---
+
+Precision: 0.0000
+Recall: 0.0000
+F1: 0.0000
+True Positives (TP): 0
+False Positives (FP - Aspect *wrongly* identified): 1
+False Negatives (FN - Aspect *missed*): 0
+True Negatives (TN): 7
+
+TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
+  1. Pred Val: '1'. Text: "[Review text not available, index: 1]..."
+
+TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):

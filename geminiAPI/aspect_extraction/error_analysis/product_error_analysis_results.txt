@@ -1,0 +1,47 @@
+## Extraction Error Analysis
+
+### Summary by Error Type
+Perfect Matches (F1=1.000): 1
+Under-Extraction Cases: 1
+Over-Extraction Cases: 2
+Partial Cases: 4
+Incorrect Cases (F1<0.25): 1
+
+--------------------------------------------------
+
+### 1. Under-Extraction Cases (Predicted tokens are a subset of Ground Truth)
+Review 2 (F1: 0.759):
+  Predicted: ['mahina lng ang hangin khit nka maximum', 'mabilis ma low batt']
+  Ground Truth: ['mahina lng ang hangin khit nka maximum', 'mabilis ma low batt', 'pinapawisan p rin lalo n yung batok']
+
+### 2. Over-Extraction Cases (Ground Truth tokens are a subset of Predicted)
+Review 6 (F1: 0.769):
+  Predicted: ['masikip yung isa', 'di stretchable kaya sobrang liit']
+  Ground Truth: ['masikip', 'di stretchable', 'sobrang liit']
+
+Review 8 (F1: 0.909):
+  Predicted: ['hindi gaanong nag strait and umiinit']
+  Ground Truth: ['hindi gaanong nag strait', 'umiinit']
+
+### 3. Partial Cases (Token sets have unique tokens in both)
+Review 1 (F1: 0.538):
+  Predicted: ['gumagana cya', 'ndi na ya magamit kahit ilang oras mo cya icharge namamatay agad', 'poor quality']
+  Ground Truth: ['at first gumagana cyapero pagnalowbat cya ndi na ya magamit', 'namamatay']
+
+Review 3 (F1: 0.267):
+  Predicted: ['ang mahaba kulay biege lang', 'ang iiksi']
+  Ground Truth: ['panu pa masusuot ng omorder skin e ang iiksi']
+
+Review 5 (F1: 0.485):
+  Predicted: ['iba yung amoy antapang may pag kalalake rin siyang scent', 'amoy na amoy talaga yung alchohol sa bawat perfume', 'mura lng naman kaya ok']
+  Ground Truth: ['not the same sa usual', 'amoy na amoy talaga yung alchohol sa bawat perfume']
+
+Review 7 (F1: 0.706):
+  Predicted: ['sobrang bango talaga', 'amoy sabon', 'nakakaumay ung amoy']
+  Ground Truth: ['sobrang bango', 'amoy sabon', 'sobrang layo sa tester nung amoy', 'nakakaumay ung amoy']
+
+### 4. Incorrect Cases (F1 < 0.25 with little to no overlap)
+Review 4 (F1: 0.211):
+  Predicted: ['2 liters order ko tapos dumating 1 liter lang']
+  Ground Truth: ['bibigay ko pa sana sa mama ko kaso pang grade 1']
+
