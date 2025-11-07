@@ -10,7 +10,7 @@ F1: 0.0000
 True Positives (TP): 0
 False Positives (FP - Aspect *wrongly* identified): 0
 False Negatives (FN - Aspect *missed*): 0
-True Negatives (TN): 9
+True Negatives (TN): 10
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
 
@@ -21,7 +21,7 @@ TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
 Precision: 1.0000
 Recall: 1.0000
 F1: 1.0000
-True Positives (TP): 7
+True Positives (TP): 8
 False Positives (FP - Aspect *wrongly* identified): 0
 False Negatives (FN - Aspect *missed*): 0
 True Negatives (TN): 2
@@ -38,7 +38,7 @@ F1: 1.0000
 True Positives (TP): 1
 False Positives (FP - Aspect *wrongly* identified): 0
 False Negatives (FN - Aspect *missed*): 0
-True Negatives (TN): 8
+True Negatives (TN): 9
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
 
@@ -52,7 +52,7 @@ F1: 0.0000
 True Positives (TP): 0
 False Positives (FP - Aspect *wrongly* identified): 0
 False Negatives (FN - Aspect *missed*): 1
-True Negatives (TN): 8
+True Negatives (TN): 9
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
 

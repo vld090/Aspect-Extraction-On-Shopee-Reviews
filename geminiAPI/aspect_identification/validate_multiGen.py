@@ -239,5 +239,101 @@ def validate_all_aspects(predicted_file: str, ground_truth_file: str, aspects: l
         'macro_f1': macro_f1
     }
 
-if __name__ == "__main__":
-    validate_all_aspects()
+def calculate_overall_performance(general_aspect_mapping: dict, error_analysis_files: dict) -> dict:
+    """Calculate overall performance metrics for each general aspect group.
+    
+    Args:
+        general_aspect_mapping: Dictionary mapping general aspects to their specific aspects
+        error_analysis_files: Dictionary mapping general aspects to their error analysis file paths
+    
+    Returns:
+        Dictionary containing aggregated metrics for each general aspect
+    """
+    overall_results = {}
+    
+    for general_aspect, specific_aspects in general_aspect_mapping.items():
+        specific_aspects = [aspect.lower() for aspect in specific_aspects]
+        # Initialize counters for this general aspect
+        total_tp = 0
+        total_fp = 0
+        total_tn = 0
+        total_fn = 0
+        
+        # Load error analysis file for this general aspect
+        error_analysis_file = error_analysis_files[general_aspect]
+        with open(error_analysis_file, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            
+        # Process each specific aspect's metrics
+        current_aspect = None
+        for line in lines:
+            line = line.strip()
+            if line.startswith('---') and line.endswith('---') and 'ASPECT' in line:
+                # Extract aspect name and clean it, removing 'ASPECT' and dashes
+                current_aspect = line.replace('-', '').replace('ASPECT', '').strip().lower()
+                continue
+                
+            if current_aspect in specific_aspects:
+                if 'True Positives (TP):' in line:
+                    total_tp += int(line.split(':')[1].strip())
+                elif 'False Positives (FP' in line:
+                    total_fp += int(line.split(':')[1].strip())
+                elif 'False Negatives (FN' in line:
+                    total_fn += int(line.split(':')[1].strip())
+                elif 'True Negatives (TN):' in line:
+                    total_tn += int(line.split(':')[1].strip())
+        
+        # Calculate overall metrics for this general aspect
+        precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0.0
+        recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0.0
+        f1_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+        accuracy = (total_tp + total_tn) / (total_tp + total_tn + total_fp + total_fn) if (total_tp + total_tn + total_fp + total_fn) > 0 else 0.0
+        
+        overall_results[general_aspect] = {
+            'true_positives': total_tp,
+            'false_positives': total_fp,
+            'true_negatives': total_tn,
+            'false_negatives': total_fn,
+            'precision': precision,
+            'recall': recall,
+            'f1_score': f1_score,
+            'accuracy': accuracy,
+            'specific_aspects': specific_aspects
+        }
+    
+    return overall_results
+
+def save_overall_results(results: dict, output_file: str):
+    """Save overall performance results to a file."""
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write("Overall Performance by General Aspect\n")
+        f.write("=" * 50 + "\n\n")
+        
+        for general_aspect, metrics in results.items():
+            f.write(f"=== {general_aspect.upper()} ===\n")
+            f.write(f"Specific aspects included: {', '.join(metrics['specific_aspects'])}\n\n")
+            f.write(f"Aggregated Metrics:\n")
+            f.write(f"True Positives (TP): {metrics['true_positives']}\n")
+            f.write(f"False Positives (FP): {metrics['false_positives']}\n")
+            f.write(f"True Negatives (TN): {metrics['true_negatives']}\n")
+            f.write(f"False Negatives (FN): {metrics['false_negatives']}\n")
+            f.write(f"Accuracy: {metrics['accuracy']:.4f}\n")
+            f.write(f"Precision: {metrics['precision']:.4f}\n")
+            f.write(f"Recall: {metrics['recall']:.4f}\n")
+            f.write(f"F1 Score: {metrics['f1_score']:.4f}\n\n")
+    
+    print(f"Overall results saved to {output_file}")
+
+# Example usage:
+# general_aspect_mapping = {
+#     'price': ['price_value', 'price_comparison', 'price_discount'],
+#     'quality': ['quality_material', 'quality_durability', 'quality_defects']
+# }
+# 
+# error_analysis_files = {
+#     'price': 'results/price_error_analysis.txt',
+#     'quality': 'results/quality_error_analysis.txt'
+# }
+# 
+# results = calculate_overall_performance(general_aspect_mapping, error_analysis_files)
+# save_overall_results(results, 'results/overall_performance.txt')

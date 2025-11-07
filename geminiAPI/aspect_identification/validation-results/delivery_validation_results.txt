@@ -12,13 +12,13 @@ TIMELINESS ASPECT
 Accuracy: 1.0000
 
 GENERAL ASPECT
-Accuracy: 0.8889
+Accuracy: 0.9000
 
 ==================================================
 EXACT MATCH (ALL ASPECTS)
 ==================================================
-Samples with ALL aspects correct: 8/9
-Accuracy: 0.8889
-Hamming Loss: 0.0278
-Micro F1 Score (Multi-Aspect): 0.9412
+Samples with ALL aspects correct: 9/10
+Accuracy: 0.9000
+Hamming Loss: 0.0250
+Micro F1 Score (Multi-Aspect): 0.9474
 Macro F1 Score (Multi-Aspect): 0.5000

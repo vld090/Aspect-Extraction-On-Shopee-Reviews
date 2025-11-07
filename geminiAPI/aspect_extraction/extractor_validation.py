@@ -177,7 +177,7 @@ def extraction_error_analysis(results: dict) -> dict:
             analysis['over'].append(review_summary)
         
         elif predicted_tokens.intersection(true_tokens) and result['f1_score'] >= 0.25:
-             # Mismatch/Partial: Both sets have unique tokens, indicating a partial match and some error on both sides.
+             # Mismatch/Partial: Both sets have unique tokens, indicating a partial match and some error on both sides. Excludes under and over cases.
              analysis['partial'].append(review_summary)
 
         elif result['f1_score'] < 0.25:

@@ -1,0 +1,55 @@
+Overall Performance by General Aspect
+==================================================
+
+=== PRODUCT ===
+Specific aspects included: color, condition, correctness, durability, effectiveness, functionality, material, sensory, measurement, general
+
+Aggregated Metrics:
+True Positives (TP): 18
+False Positives (FP): 8
+True Negatives (TN): 126
+False Negatives (FN): 8
+Accuracy: 0.9000
+Precision: 0.6923
+Recall: 0.6923
+F1 Score: 0.6923
+
+=== DELIVERY ===
+Specific aspects included: condition, correctness, timeliness, general
+
+Aggregated Metrics:
+True Positives (TP): 9
+False Positives (FP): 0
+True Negatives (TN): 30
+False Negatives (FN): 1
+Accuracy: 0.9750
+Precision: 1.0000
+Recall: 0.9000
+F1 Score: 0.9474
+
+=== PRICE ===
+Specific aspects included: affordability, value_for_money, general
+
+Aggregated Metrics:
+True Positives (TP): 7
+False Positives (FP): 1
+True Negatives (TN): 15
+False Negatives (FN): 1
+Accuracy: 0.9167
+Precision: 0.8750
+Recall: 0.8750
+F1 Score: 0.8750
+
+=== SERVICE ===
+Specific aspects included: handling, responsiveness, trustworthiness, general
+
+Aggregated Metrics:
+True Positives (TP): 8
+False Positives (FP): 4
+True Negatives (TN): 19
+False Negatives (FN): 1
+Accuracy: 0.8438
+Precision: 0.6667
+Recall: 0.8889
+F1 Score: 0.7619
+
