@@ -10,6 +10,13 @@
           "the",
           "price"
         ]
+      },
+      {
+        "phrase": "mura lng",
+        "tokens_normalized": [
+          "mura",
+          "lng"
+        ]
       }
     ]
   },

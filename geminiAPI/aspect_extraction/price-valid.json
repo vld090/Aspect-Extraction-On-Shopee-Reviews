@@ -18,13 +18,6 @@
     "review": "sira sya at may amoy na ung adoptor diko bet kase nasayang lng pera ko",
     "extractions": [
       {
-        "phrase": "mura lng",
-        "tokens_normalized": [
-          "mura",
-          "lng"
-        ]
-      },
-      {
         "phrase": "nasayang lng pera ko",
         "tokens_normalized": [
           "nasayang",

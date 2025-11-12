@@ -13,10 +13,10 @@ False Negatives (FN - Aspect *missed*): 1
 True Negatives (TN): 14
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
-  1. Pred Val: '1'. Text: "[Review text not available, index: 2]..."
+  1. Pred Val: '1'. Text: "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa ..."
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
-  1. Actual Val: '1'. Text: "[Review text not available, index: 15]..."
+  1. Actual Val: '1'. Text: "wrong color ipinadala ni seller sakin pero yung crocs itself is okay naman goods na for its price se..."
 
 --- CONDITION ASPECT ---
 
@@ -29,12 +29,12 @@ False Negatives (FN - Aspect *missed*): 3
 True Negatives (TN): 12
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
-  1. Pred Val: '1'. Text: "[Review text not available, index: 15]..."
+  1. Pred Val: '1'. Text: "wrong color ipinadala ni seller sakin pero yung crocs itself is okay naman goods na for its price se..."
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
-  1. Actual Val: '1'. Text: "[Review text not available, index: 10]..."
-  2. Actual Val: '1'. Text: "[Review text not available, index: 12]..."
-  3. Actual Val: '1'. Text: "[Review text not available, index: 14]..."
+  1. Actual Val: '1'. Text: "not working yung naorder ko po sira yung pinaka tip nung item..."
+  2. Actual Val: '1'. Text: "sira ung right side hnd sya nagchacharge bulok tagal pa dumating..."
+  3. Actual Val: '1'. Text: "deffective siyaone side lang ng fan ang gumagana tapos d naman nagflicker kapag inacharge sayang ang..."
 
 --- CORRECTNESS ASPECT ---
 
@@ -47,8 +47,8 @@ False Negatives (FN - Aspect *missed*): 0
 True Negatives (TN): 13
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
-  1. Pred Val: '1'. Text: "[Review text not available, index: 2]..."
-  2. Pred Val: '1'. Text: "[Review text not available, index: 3]..."
+  1. Pred Val: '1'. Text: "sabe q ky seller mga mahaba ang ipadala nya pagdating sakin isa ang mahaba kulay biege lang panu pa ..."
+  2. Pred Val: '1'. Text: "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pan..."
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
 
@@ -79,7 +79,7 @@ True Negatives (TN): 14
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
-  1. Actual Val: '1'. Text: "[Review text not available, index: 8]..."
+  1. Actual Val: '1'. Text: "hindi gaanong nag strait and umiinit sayang pera..."
 
 --- FUNCTIONALITY ASPECT ---
 
@@ -92,9 +92,9 @@ False Negatives (FN - Aspect *missed*): 0
 True Negatives (TN): 5
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
-  1. Pred Val: '1'. Text: "[Review text not available, index: 0]..."
-  2. Pred Val: '1'. Text: "[Review text not available, index: 1]..."
-  3. Pred Val: '1'. Text: "[Review text not available, index: 11]..."
+  1. Pred Val: '1'. Text: "at first gumagana cyapero pagnalowbat cya ndi na ya magamit kahit ilang oras mo cya icharge namamata..."
+  2. Pred Val: '1'. Text: "mahina lng ang hangin khit nka maximum na mabilis ma low batt pinapawisan p rin lalo n yung batok..."
+  3. Pred Val: '1'. Text: "seller not responding sayang pera dto 5 mins lang lowbat na..."
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
 
@@ -139,7 +139,7 @@ True Negatives (TN): 12
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
-  1. Actual Val: '1'. Text: "[Review text not available, index: 3]..."
+  1. Actual Val: '1'. Text: "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pan..."
 
 --- GENERAL ASPECT ---
 
@@ -152,8 +152,8 @@ False Negatives (FN - Aspect *missed*): 2
 True Negatives (TN): 12
 
 TOP 5 FALSE POSITIVE EXAMPLES (Model identified, but Ground Truth said '0'):
-  1. Pred Val: '1'. Text: "[Review text not available, index: 3]..."
+  1. Pred Val: '1'. Text: "grabe naman toh 2 liters order ko tapos dumating 1 liter lang bibigay ko pa sana sa mama ko kaso pan..."
 
 TOP 5 FALSE NEGATIVE EXAMPLES (Model missed, but Ground Truth said *a value*):
-  1. Actual Val: '1'. Text: "[Review text not available, index: 7]..."
-  2. Actual Val: '1'. Text: "[Review text not available, index: 13]..."
+  1. Actual Val: '1'. Text: "hindi po ngccharge yung earbuds sana nagrereply din kayo sa inquiries ng mga customer nyo bad custom..."
+  2. Actual Val: '1'. Text: "not goode sayang lang po pera nyo ditowag po kayo oorder sa seller na itopayment is unfair to the it..."

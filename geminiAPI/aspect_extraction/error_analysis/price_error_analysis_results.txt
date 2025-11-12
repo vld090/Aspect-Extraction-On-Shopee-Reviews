@@ -1,8 +1,8 @@
 ## Extraction Error Analysis
 
 ### Summary by Error Type
-Perfect Matches (F1=1.000): 1
-Under-Extraction Cases: 1
+Perfect Matches (F1=1.000): 2
+Under-Extraction Cases: 0
 Over-Extraction Cases: 0
 Partial Cases: 0
 Incorrect Cases (F1<0.25): 0
@@ -10,9 +10,7 @@ Incorrect Cases (F1<0.25): 0
 --------------------------------------------------
 
 ### 1. Under-Extraction Cases (Predicted tokens are a subset of Ground Truth)
-Review 49 (F1: 0.889):
-  Predicted: ['nasayang lng pera ko']
-  Ground Truth: ['mura lng', 'nasayang lng pera ko']
+No pure Under-Extraction cases found.
 
 ### 2. Over-Extraction Cases (Ground Truth tokens are a subset of Predicted)
 No pure Over-Extraction cases found.
